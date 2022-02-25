@@ -123,8 +123,8 @@
     <div class="buttongroup" id="mybuttongroup">
         <label><input type="radio" name="label" value="01" onclick="videocheck()" checked="checked">
             <span class="btn-radio"></span></label>
-        <!-- <label><input type="radio" name="label" value="02" onclick="videocheck()">
-            <span class="btn-radio"></span></label> -->
+        <label><input type="radio" name="label" value="02" onclick="videocheck()">
+            <span class="btn-radio"></span></label>
         <!-- <label><input type="radio" name="label" value="03" onclick="videocheck()">
             <span class="btn-radio"></span></label>
         <label><input type="radio" name="label" value="04" onclick="videocheck()">
@@ -135,9 +135,9 @@
     <div class="buttongroup mybuttons" id="mybuttons-01">
         <input type="button" onclick="playvideo('vid_01')" class="buttons btn-play">
     </div>
-    <!-- <div class="buttongroup mybuttons" id="mybuttons-02">
-        <input type="button" onclick="playvideo('vid_P14')" class="buttons btn-play">
-    </div> -->
+    <div class="buttongroup mybuttons" id="mybuttons-02">
+        <input type="button" onclick="playvideo('vid_02')" class="buttons btn-play">
+    </div>
     <!-- <div class="buttongroup mybuttons" id="mybuttons-03">
         <input type="button" onclick="playvideo('vid_P21')" class="buttons btn-play">
     </div>
@@ -149,14 +149,22 @@
     </div> -->
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
-        <a-nft type="nft" url="./data/01-05_" smooth="true" smoothCount="10" smoothTolerance=".01"
+        <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <a-video src="#vid_01" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_02" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
             </a-video>
         </a-nft>
         <a-assets>
             <!-- <img id="my-image" src="image.png"> -->
             <video class="myvid" id="vid_01" src="assets/01_bubble.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_02" src="assets/02_ocean.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
         </a-assets>
