@@ -122,7 +122,7 @@
         <label><input type="radio" name="label" value="05" onclick="videocheck()">
             <span class="btn-radio">05</span></label>
     </div>
-    <div class="buttongroup" id="mybuttongroup2">
+    <!-- <div class="buttongroup" id="mybuttongroup2">
         <label><input type="radio" name="label" value="06" onclick="videocheck()">
             <span class="btn-radio">06</span></label>
         <label><input type="radio" name="label" value="07" onclick="videocheck()">
@@ -133,7 +133,7 @@
             <span class="btn-radio">09</span></label>
         <label><input type="radio" name="label" value="10" onclick="videocheck()">
             <span class="btn-radio">10</span></label>
-    </div>
+    </div> -->
     <div class="buttongroup mybuttons" id="mybuttons-01">
         <input type="button" onclick="playvideo('vid_01')" class="buttons" value="PLAY">
     </div>
@@ -149,7 +149,7 @@
     <div class="buttongroup mybuttons" id="mybuttons-05">
         <input type="button" onclick="playvideo('vid_05')" class="buttons" value="PLAY">
     </div>
-    <div class="buttongroup mybuttons" id="mybuttons-06">
+    <!-- <div class="buttongroup mybuttons" id="mybuttons-06">
         <input type="button" onclick="playvideo('vid_06')" class="buttons" value="PLAY">
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-07">
@@ -163,7 +163,7 @@
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-10">
         <input type="button" onclick="playvideo('vid_10')" class="buttons" value="PLAY">
-    </div>
+    </div> -->
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
@@ -189,7 +189,7 @@
             <a-video src="#vid_05" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
-        <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
+        <!-- <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <a-video src="#vid_06" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
@@ -211,7 +211,7 @@
         <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
             <a-video src="#vid_10" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
-        </a-nft>
+        </a-nft> -->
         <a-assets>
             <video class="myvid" id="vid_01" src="assets/01_bubble.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
@@ -228,7 +228,7 @@
             <video class="myvid" id="vid_05" src="assets/05_island.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
-            <video class="myvid" id="vid_06" src="assets/06_leave.mp4" preload="auto" autoplay="false" loop="true"
+            <!-- <video class="myvid" id="vid_06" src="assets/06_leave.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
             <video class="myvid" id="vid_07" src="assets/07_dragon.mp4" preload="auto" autoplay="false" loop="true"
@@ -242,7 +242,7 @@
             </video>
             <video class="myvid" id="vid_10" src="assets/10_blow.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
+            </video> -->
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
@@ -269,7 +269,7 @@
 
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
-            document.getElementById("mybuttongroup2").style.display = "flex";
+            // document.getElementById("mybuttongroup2").style.display = "flex";
             videocheck();
         };
     </script>
