@@ -46,20 +46,22 @@
     }
 
     #mybuttongroup {
+        bottom: 9.5em;
+    }
+    #mybuttongroup2 {
         bottom: 6.5em;
-        flex-wrap: wrap
     }
 
-    #mybuttongroup input[type="radio"] {
+    #mybuttongroup input[type="radio"],#mybuttongroup2 input[type="radio"] {
         display: none;
     }
 
-    #mybuttongroup .btn-radio {
+    #mybuttongroup .btn-radio,#mybuttongroup2 .btn-radio {
         -webkit-tap-highlight-color: transparent;
         display: inline-block;
         line-height: 2.5em;
         border-radius: 2.5em;
-        width: 3.6em;
+        width: 2em;
         height: 2.1em;
         margin: 0.5em;
         cursor: pointer;
@@ -67,10 +69,14 @@
         background-position: center;
         background-repeat: no-repeat;
         filter: brightness(50%);
+        font-weight: bolder;
+        background-color: aliceblue;
+
     }
 
-    #mybuttongroup input:checked+.btn-radio {
+    #mybuttongroup input:checked+.btn-radio,#mybuttongroup2 input:checked+.btn-radio {
         cursor: default;
+        background-color: blanchedalmond;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -79,7 +85,7 @@
         filter: brightness(100%);
     }
 
-    #mybuttongroup label:nth-child(1) .btn-radio {
+    /* #mybuttongroup label:nth-child(1) .btn-radio {
         background-image: url(assets/AR___01.png);
     }
 
@@ -98,6 +104,30 @@
     #mybuttongroup label:nth-child(5) .btn-radio {
         background-image: url(assets/AR___05.png);
     }
+
+    #mybuttongroup label:nth-child(6) .btn-radio {
+        background-image: url(assets/AR___01.png);
+    }
+
+    #mybuttongroup label:nth-child(7) .btn-radio {
+        background-image: url(assets/AR___02.png);
+    }
+
+    #mybuttongroup label:nth-child(8) .btn-radio {
+        background-image: url(assets/AR___03.png);
+    }
+
+    #mybuttongroup label:nth-child(9) .btn-radio {
+        background-image: url(assets/AR___04.png);
+    }
+
+    #mybuttongroup label:nth-child(10) .btn-radio {
+        background-image: url(assets/AR___05.png);
+    }
+
+    #mybuttongroup label:nth-child(11) .btn-radio {
+        background-image: url(assets/AR___05.png);
+    } */
 
     .buttons {
         border-radius: 4em;
@@ -134,6 +164,8 @@
             <span class="btn-radio">05</span></label>
         <label><input type="radio" name="label" value="06" onclick="videocheck()">
             <span class="btn-radio">06</span></label>
+    </div>
+    <div class="buttongroup" id="mybuttongroup2">
         <label><input type="radio" name="label" value="07" onclick="videocheck()">
             <span class="btn-radio">07</span></label>
         <label><input type="radio" name="label" value="08" onclick="videocheck()">
@@ -182,57 +214,53 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_01" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_01" position="100 -200 -100" rotation="-90 0 0" play="true" width=219.8 height=106.6>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_02" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_02" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
-        <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01"
-            smoothThreshold="5">
-            <a-video src="#vid_03" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+        <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-video src="#vid_03" position="100 -200 -100" rotation="-90 0 0" play="true" width=125 height=125>
             </a-video>
         </a-nft>
-        <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01"
-            smoothThreshold="5">
-            <a-video src="#vid_04" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+        <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-video src="#vid_04" position="100 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/05_island" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_05" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_05" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_06" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_06" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/07_dragon" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_07" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_07" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/08_scarf" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_08" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_08" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
-        <a-nft type="nft" url="./data/09_bird" smooth="true" smoothCount="10" smoothTolerance=".01"
-            smoothThreshold="5">
-            <a-video src="#vid_09" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+        <a-nft type="nft" url="./data/09_bird" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-video src="#vid_09" position="100 -200 -100" rotation="-90 0 0" play="true" width=125 height=125>
             </a-video>
         </a-nft>
-        <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01"
-            smoothThreshold="5">
-            <a-video src="#vid_10" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+        <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+            <a-video src="#vid_10" position="100 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_11" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            <a-video src="#vid_11" position="100 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
             </a-video>
         </a-nft>
         <a-assets>
@@ -268,8 +296,8 @@
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
             <video class="myvid" id="vid_11" src="assets/11_distance.mp4" preload="auto" autoplay="false" loop="true"
-            response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-        </video>
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
@@ -291,11 +319,13 @@
                 vids[i].pause();
                 vids[i].currentTime = 0;
             }
-            document.getElementById("mybuttons-"+label).style.display = "flex";
+            document.getElementById("mybuttons-" + label).style.display = "flex";
         }
 
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
+            document.getElementById("mybuttongroup2").style.display = "flex";
+
             videocheck();
         };
     </script>
