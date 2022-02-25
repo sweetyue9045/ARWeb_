@@ -291,25 +291,7 @@
                 vids[i].pause();
                 vids[i].currentTime = 0;
             }
-            switch (label) {
-                case "01":
-                    document.getElementById("mybuttons-01").style.display = "flex";
-                    break;
-                case "02":
-                    document.getElementById("mybuttons-02").style.display = "flex";
-                    break;
-                case "03":
-                    document.getElementById("mybuttons-03").style.display = "flex";
-                    break;
-                case "04":
-                    document.getElementById("mybuttons-04").style.display = "flex";
-                    break;
-                case "05":
-                    document.getElementById("mybuttons-05").style.display = "flex";
-                    break;
-                default:
-                    break;
-            }
+            document.getElementById("mybuttons-"+label).style.display = "flex";
         }
 
         window.onload = function () {
