@@ -47,6 +47,7 @@
 
     #mybuttongroup {
         bottom: 6.5em;
+        flex-wrap: wrap
     }
 
     #mybuttongroup input[type="radio"] {
@@ -82,11 +83,11 @@
         background-image: url(assets/AR___01.png);
     }
 
-   #mybuttongroup label:nth-child(2) .btn-radio {
+    #mybuttongroup label:nth-child(2) .btn-radio {
         background-image: url(assets/AR___02.png);
     }
 
-     /* #mybuttongroup label:nth-child(3) .btn-radio {
+    #mybuttongroup label:nth-child(3) .btn-radio {
         background-image: url(assets/AR___03.png);
     }
 
@@ -96,7 +97,7 @@
 
     #mybuttongroup label:nth-child(5) .btn-radio {
         background-image: url(assets/AR___05.png);
-    } */
+    }
 
     .buttons {
         border-radius: 4em;
@@ -122,15 +123,27 @@
     </div>
     <div class="buttongroup" id="mybuttongroup">
         <label><input type="radio" name="label" value="01" onclick="videocheck()" checked="checked">
-            <span class="btn-radio"></span></label>
+            <span class="btn-radio">01</span></label>
         <label><input type="radio" name="label" value="02" onclick="videocheck()">
-            <span class="btn-radio"></span></label>
-        <!-- <label><input type="radio" name="label" value="03" onclick="videocheck()">
-            <span class="btn-radio"></span></label>
+            <span class="btn-radio">02</span></label>
+        <label><input type="radio" name="label" value="03" onclick="videocheck()">
+            <span class="btn-radio">03</span></label>
         <label><input type="radio" name="label" value="04" onclick="videocheck()">
-            <span class="btn-radio"></span></label>
+            <span class="btn-radio">04</span></label>
         <label><input type="radio" name="label" value="05" onclick="videocheck()">
-            <span class="btn-radio"></span></label> -->
+            <span class="btn-radio">05</span></label>
+        <label><input type="radio" name="label" value="06" onclick="videocheck()">
+            <span class="btn-radio">06</span></label>
+        <label><input type="radio" name="label" value="07" onclick="videocheck()">
+            <span class="btn-radio">07</span></label>
+        <label><input type="radio" name="label" value="08" onclick="videocheck()">
+            <span class="btn-radio">08</span></label>
+        <label><input type="radio" name="label" value="09" onclick="videocheck()">
+            <span class="btn-radio">09</span></label>
+        <label><input type="radio" name="label" value="10" onclick="videocheck()">
+            <span class="btn-radio">10</span></label>
+        <label><input type="radio" name="label" value="11" onclick="videocheck()">
+            <span class="btn-radio">11</span></label>
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-01">
         <input type="button" onclick="playvideo('vid_01')" class="buttons btn-play">
@@ -138,15 +151,33 @@
     <div class="buttongroup mybuttons" id="mybuttons-02">
         <input type="button" onclick="playvideo('vid_02')" class="buttons btn-play">
     </div>
-    <!-- <div class="buttongroup mybuttons" id="mybuttons-03">
-        <input type="button" onclick="playvideo('vid_P21')" class="buttons btn-play">
+    <div class="buttongroup mybuttons" id="mybuttons-03">
+        <input type="button" onclick="playvideo('vid_03')" class="buttons btn-play">
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-04">
-        <input type="button" onclick="playvideo('vid_P25')" class="buttons btn-play">
+        <input type="button" onclick="playvideo('vid_04')" class="buttons btn-play">
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-05">
-        <input type="button" onclick="playvideo('vid_P27')" class="buttons btn-play">
-    </div> -->
+        <input type="button" onclick="playvideo('vid_05')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-06">
+        <input type="button" onclick="playvideo('vid_06')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-07">
+        <input type="button" onclick="playvideo('vid_07')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-08">
+        <input type="button" onclick="playvideo('vid_08')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-09">
+        <input type="button" onclick="playvideo('vid_09')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-10">
+        <input type="button" onclick="playvideo('vid_10')" class="buttons btn-play">
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-11">
+        <input type="button" onclick="playvideo('vid_11')" class="buttons btn-play">
+    </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
@@ -159,6 +190,51 @@
             <a-video src="#vid_02" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
             </a-video>
         </a-nft>
+        <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_03" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_04" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/05_island" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_05" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_06" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/07_dragon" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_07" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/08_scarf" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_08" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/09_bird" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_09" position="40 -200 -50" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_10" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
+        <a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_11" position="40 -200 -150" rotation="-90 0 0" play="true" width=125 height=125>
+            </a-video>
+        </a-nft>
         <a-assets>
             <!-- <img id="my-image" src="image.png"> -->
             <video class="myvid" id="vid_01" src="assets/01_bubble.mp4" preload="auto" autoplay="false" loop="true"
@@ -167,6 +243,33 @@
             <video class="myvid" id="vid_02" src="assets/02_ocean.mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
+            <video class="myvid" id="vid_03" src="assets/01_bubble.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_04" src="assets/04_fish.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_05" src="assets/05_island.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_06" src="assets/06_leave.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_07" src="assets/07_dragon.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_08" src="assets/08_scarf.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_09" src="assets/01_bubble.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_10" src="assets/10_blow.mp4" preload="auto" autoplay="false" loop="true"
+                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
+            <video class="myvid" id="vid_11" src="assets/11_distance.mp4" preload="auto" autoplay="false" loop="true"
+            response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+        </video>
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
