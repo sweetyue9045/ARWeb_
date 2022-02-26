@@ -121,21 +121,22 @@
             <span class="btn-radio">04</span></label>
         <label><input type="radio" name="label" value="05" onclick="videocheck()">
             <span class="btn-radio">05</span></label>
+
+    </div>
+    <div class="buttongroup" id="mybuttongroup2">
         <label><input type="radio" name="label" value="06" onclick="videocheck()">
             <span class="btn-radio">06</span></label>
         <label><input type="radio" name="label" value="07" onclick="videocheck()">
             <span class="btn-radio">07</span></label>
-    </div>
-    <!-- <div class="buttongroup" id="mybuttongroup2">
-        
-        
         <label><input type="radio" name="label" value="08" onclick="videocheck()">
             <span class="btn-radio">08</span></label>
         <label><input type="radio" name="label" value="09" onclick="videocheck()">
             <span class="btn-radio">09</span></label>
         <label><input type="radio" name="label" value="10" onclick="videocheck()">
             <span class="btn-radio">10</span></label>
-    </div> -->
+        <label><input type="radio" name="label" value="11" onclick="videocheck()">
+            <span class="btn-radio">11</span></label>
+    </div>
     <div class="buttongroup mybuttons" id="mybuttons-01">
         <input type="button" onclick="playvideo('vid_01')" class="buttons" value="PLAY">
     </div>
@@ -157,7 +158,7 @@
     <div class="buttongroup mybuttons" id="mybuttons-07">
         <input type="button" onclick="playvideo('vid_07')" class="buttons" value="PLAY">
     </div>
-    <!-- <div class="buttongroup mybuttons" id="mybuttons-08">
+    <div class="buttongroup mybuttons" id="mybuttons-08">
         <input type="button" onclick="playvideo('vid_08')" class="buttons" value="PLAY">
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-09">
@@ -165,21 +166,24 @@
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-10">
         <input type="button" onclick="playvideo('vid_10')" class="buttons" value="PLAY">
-    </div> -->
+    </div>
+    <div class="buttongroup mybuttons" id="mybuttons-11">
+        <input type="button" onclick="playvideo('vid_11')" class="buttons" value="PLAY">
+    </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_01" position="80 -200 -100" rotation="-90 0 0" play="true" width=219.8 height=160.6>
+            <a-video src="#vid_01" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_02" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
+            <a-video src="#vid_02" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-video src="#vid_03" position="80 -200 -100" rotation="-90 0 0" play="true" width=225 height=225>
+            <a-video src="#vid_03" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
@@ -188,32 +192,37 @@
         </a-nft>
         <a-nft type="nft" url="./data/05_island" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_05" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
+            <a-video src="#vid_05" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_06" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
+            <a-video src="#vid_06" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/07_dragon" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_07" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
+            <a-video src="#vid_07" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
-        <!-- <a-nft type="nft" url="./data/08_scarf" smooth="true" smoothCount="10" smoothTolerance=".01"
+        <a-nft type="nft" url="./data/08_scarf" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_08" position="80 -200 -100" rotation="-90 0 0" play="true" width=212.6 height=153.4>
+            <a-video src="#vid_08" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/09_bird" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-video src="#vid_09" position="80 -200 -100" rotation="-90 0 0" play="true" width=225 height=225>
+            <a-video src="#vid_09" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
             <a-video src="#vid_10" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
             </a-video>
-        </a-nft> -->
+        </a-nft>
+        <a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-video src="#vid_11" position="80 -200 -100" rotation="-90 0 0" play="true" width=187 height=135>
+            </a-video>
+        </a-nft>
         <a-assets>
             <video class="myvid" id="vid_01" src="assets/01_bubble (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
@@ -221,7 +230,7 @@
             <video class="myvid" id="vid_02" src="assets/02_ocean (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
-            <video class="myvid" id="vid_03" src="assets/P14_AR_01 (1).mp4" preload="auto" autoplay="false" loop="true"
+            <video class="myvid" id="vid_03" src="assets/03_sky (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
             <video class="myvid" id="vid_04" src="assets/04_fish (1).mp4" preload="auto" autoplay="false" loop="true"
@@ -236,15 +245,18 @@
             <video class="myvid" id="vid_07" src="assets/07_dragon (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
-            <!-- <video class="myvid" id="vid_08" src="assets/08_scarf (1).mp4" preload="auto" autoplay="false" loop="true"
+            <video class="myvid" id="vid_08" src="assets/08_scarf (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
-            <video class="myvid" id="vid_09" src="assets/P18_AR_02 (1).mp4" preload="auto" autoplay="false" loop="true"
+            <video class="myvid" id="vid_09" src="assets/09_bird (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
             <video class="myvid" id="vid_10" src="assets/10_blow (1).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video> -->
+            </video>
+            <video class="myvid" id="vid_10" src="assets/11_distance (1).mp4" preload="auto" autoplay="false"
+                loop="true" response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
+            </video>
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
@@ -271,7 +283,7 @@
 
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
-            // document.getElementById("mybuttongroup2").style.display = "flex";
+            document.getElementById("mybuttongroup2").style.display = "flex";
             videocheck();
         };
     </script>
