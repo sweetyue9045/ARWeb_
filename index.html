@@ -173,7 +173,7 @@
             </a-video>
         </a-nft>
         <a-assets>
-            <img id="test" src="assets/01/01前景_泡泡 雲 碎石_00000.png" style="width: 1122px;">
+            <img id="test" src="assets/01/01_bubble (1).png">
 
             <img id="01_bubble" src="assets/01-2.gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
@@ -219,16 +219,16 @@
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
             videocheck();
-            change();
+            // change();
         };
 
 
 
         function change() {
             x++;
-            var y = x % 9
+            var y = (x % 9) + 1
             console.log(x, y)
-            document.querySelector("#test").setAttribute("src", "assets/01/01前景_泡泡 雲 碎石_0000" + y + ".png")
+            document.querySelector("#test").setAttribute("src", "assets/01/01_bubble(" + y + ").png")
             setTimeout(change, 500);
 
         }
