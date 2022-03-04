@@ -7,6 +7,7 @@
 
     <script src="js/aframe-master.min.js"></script>
     <script src="js/aframe-ar-nft.js"></script>
+    <script src="js/aframe-gif-shader.min.js"></script>
 
 </head>
 
@@ -107,6 +108,11 @@
         height: 2em;
         font-size: 20px;
     }
+
+    .mygif{
+        width: 1122px;
+        height: 810px;
+    }
 </style>
 
 <body style="margin : 0px; overflow: hidden;">
@@ -146,8 +152,7 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_01" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-video>
+            <a-entity geometry="primitive:plane" width=196.35 height=141.75 position="-1.2 -2.125 -1" material="shader:gif;src:#01_bubble;"></a-entity>
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
@@ -168,6 +173,7 @@
             </a-video>
         </a-nft>
         <a-assets>
+            <img class="mygif" id="01_bubble" src="assets/01.gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
