@@ -129,7 +129,6 @@
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-01">
         <input type="button" onclick="playvideo('vid_01')" class="buttons" value="PLAY">
-        <input type="button" onclick="change()" class="buttons" value="change">
     </div>
     <div class="buttongroup mybuttons" id="mybuttons-02">
         <input type="button" onclick="playvideo('vid_02')" class="buttons" value="PLAY">
@@ -148,10 +147,8 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <!-- <a-image src="#test1" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-image> -->
             <a-image src="#01_bubble"
-                material="shader:gif;src:url(assets/01.gif);"
+                material="shader:gif;src:url(https://3.bp.blogspot.com/-_Xf2C519_T0/WDfzsG3kAQI/AAAAAAALeg0/Y6Ys7KNYzhUXxMNBJHU8CZlLdvMj0PsSwCLcB/s1600/AS001178_19.gif);"
                 position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
@@ -173,11 +170,6 @@
             </a-video>
         </a-nft>
         <a-assets>
-            <img id="test1" src="assets/01/01_bubble (1).png">
-            <img id="test2" src="assets/01/01_bubble (2).png">
-            <img id="test3" src="assets/01/01_bubble (3).png">
-            <img id="test4" src="assets/01/01_bubble (4).png">
-
             <img id="01_bubble" src="assets/01-2.gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
@@ -223,16 +215,5 @@
             document.getElementById("mybuttongroup").style.display = "flex";
             videocheck();
         };
-
-
-
-        function change() {
-            x++;
-            var y = (x % 4) + 1
-            console.log(x, y)
-            document.querySelector("a-image").setAttribute("src", "#test"+y)
-            if(x%10==0) alert(x)
-            setTimeout(change, 500);
-        }
     </script>
 </body>
