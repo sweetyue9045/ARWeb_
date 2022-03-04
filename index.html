@@ -219,7 +219,7 @@
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
             videocheck();
-            // change();
+            change();
         };
 
 
@@ -228,7 +228,7 @@
             x++;
             var y = (x % 9) + 1
             console.log(x, y)
-            document.querySelector("#test").setAttribute("src", "assets/01/01_bubble(" + y + ").png")
+            document.querySelector("#test").setAttribute("src", "assets/01/01_bubble (" + y + ").png")
             setTimeout(change, 500);
 
         }
