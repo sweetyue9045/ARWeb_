@@ -108,11 +108,6 @@
         height: 2em;
         font-size: 20px;
     }
-
-    .mygif{
-        width: 1122px;
-        height: 810px;
-    }
 </style>
 
 <body style="margin : 0px; overflow: hidden;">
@@ -148,13 +143,16 @@
     <div class="buttongroup mybuttons" id="mybuttons-05">
         <input type="button" onclick="playvideo('vid_05')" class="buttons" value="PLAY">
     </div>
+
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <!-- <a-plane geometry="primitive:circle;" position="70 -200 -100" rotation="-45 0 0" material="shader:gif;src:url(https://mayognaise.github.io/aframe-gif-shader/basic/banana.gif);" gif="" rotation="" scale="" visible=""></a-plane> -->
-            <a-image src="#01_bubble" material="shader:gif;src:url(assets/giphy.gif);" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75></a-image>
-            <!-- <a-entity geometry="primitive:plane" width=196.35 height=141.75 position="2 -2 -20" material="shader:gif;;src:url(https://media0.giphy.com/media/xT9IgsOaEG15pWz17y/giphy.gif)"></a-entity> -->
+            <a-image src="#test" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
+            </a-image>
+            <!-- <a-image src="#01_bubble"
+                material="shader:gif;src:url(https://pic.pimg.tw/tanhua/1597991910-3215898225-g.gif);"
+                position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75></a-image> -->
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
@@ -175,7 +173,9 @@
             </a-video>
         </a-nft>
         <a-assets>
-            <img class="mygif" id="01_bubble" src="assets/01-2.gif">
+            <img id="test" src="assets/01/01前景_泡泡 雲 碎石_00000.png" style="width: 1122px;">
+
+            <img id="01_bubble" src="assets/01-2.gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
@@ -215,10 +215,22 @@
             }
             document.getElementById("mybuttons-" + label).style.display = "flex";
         }
-
+        var x = 1;
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
             videocheck();
+            change();
         };
+
+
+
+        function change() {
+            x++;
+            var y = x % 9
+            console.log(x, y)
+            document.querySelector("#test").setAttribute("src", "assets/01/01前景_泡泡 雲 碎石_0000" + y + ".png")
+            setTimeout(change, 500);
+
+        }
     </script>
 </body>
