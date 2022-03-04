@@ -174,7 +174,10 @@
             </a-video>
         </a-nft>
         <a-assets>
-            <img id="test" src="assets/01/01_bubble (1).png">
+            <img id="test1" src="assets/01/01_bubble (1).png">
+            <img id="test2" src="assets/01/01_bubble (2).png">
+            <img id="test3" src="assets/01/01_bubble (3).png">
+            <img id="test4" src="assets/01/01_bubble (4).png">
 
             <img id="01_bubble" src="assets/01-2.gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
@@ -226,9 +229,9 @@
 
         function change() {
             x++;
-            var y = (x % 9) + 1
+            var y = (x % 4) + 1
             console.log(x, y)
-            document.querySelector("#test").setAttribute("src", "assets/01/01_bubble (" + y + ").png")
+            document.querySelector("a-image").setAttribute("src", "#test"+y)
             if(x%10==0) alert(x)
             setTimeout(change, 500);
         }
