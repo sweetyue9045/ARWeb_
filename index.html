@@ -146,20 +146,22 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-image
-                material="shader:gif;src:url(assets/AS002123_06.gif);"
-                position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75></a-image>
-
+            <a-image material="shader:gif;src:url(assets/AS002123_06.gif);" position="70 -200 -100" rotation="-90 0 0"
+                play="true" width=196.35 height=141.75></a-image>
+            <!-- <a-image material="shader:gif;src:url(assets/01-middle.gif);" position="70 -200 -100" rotation="-90 0 0"
+                play="true" width=196.35 height=141.75></a-image> -->
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-image material="shader:gif;src:url(assets/01-middle.gif);" position="70 -200 -100" rotation="-90 0 0"
-                play="true" width=196.35 height=141.75></a-image>
+            <a-video src="#vid_02" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
+            </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-entity
+            <!-- <a-entity
                 gltf-model="assets/01 test.fbx"
-                scale="1 1 1" position="100 100 0"> </a-entity>
+                scale="1 1 1" position="100 100 0"> </a-entity> -->
+            <a-video src="#vid_03" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
+            </a-video>
         </a-nft>
         <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
             <a-video src="#vid_04" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
