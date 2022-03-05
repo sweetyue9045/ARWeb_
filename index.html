@@ -154,7 +154,7 @@
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-image src="#01_bubble" material="shader:gif;src:url(assets/01_2.gif);" position="70 -200 -100" rotation="-90 0 0"
+            <a-image id="testimg" src="#test1" position="70 -200 -100" rotation="-90 0 0"
                 play="true" width=196.35 height=141.75></a-image>
             <!-- <a-video src="#vid_02" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
             </a-video> -->
@@ -173,6 +173,20 @@
             </a-video>
         </a-nft>
         <a-assets>
+            <img id="test1" src="assets/01/01_bubble (1).png">
+            <img id="test2" src="assets/01/01_bubble (2).png">
+            <img id="test3" src="assets/01/01_bubble (3).png">
+            <img id="test4" src="assets/01/01_bubble (4).png">
+            <img id="test5" src="assets/01/01_bubble (5).png">
+            <img id="test6" src="assets/01/01_bubble (6).png">
+            <img id="test7" src="assets/01/01_bubble (7).png">
+            <img id="test8" src="assets/01/01_bubble (8).png">
+            <img id="test9" src="assets/01/01_bubble (9).png">
+            <img id="test10" src="assets/01/01_bubble (10).png">
+            <img id="test11" src="assets/01/01_bubble (11).png">
+            <img id="test12" src="assets/01/01_bubble (12).png">
+            <img id="test13" src="assets/01/01_bubble (13).png">
+            <img id="test14" src="assets/01/01_bubble (14).png">
             <img id="01_bubble" src="assets/01_bubble-(1).gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
@@ -217,6 +231,16 @@
         window.onload = function () {
             document.getElementById("mybuttongroup").style.display = "flex";
             videocheck();
+            change();
         };
+
+        function change() {
+            x++;
+            var y = (x % 14) + 1
+            console.log(x, y)
+            document.querySelector("#testimg").setAttribute("src", "#test"+y)
+
+            setTimeout(change, 500);
+        }
     </script>
 </body>
