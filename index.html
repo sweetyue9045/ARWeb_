@@ -7,7 +7,6 @@
 
     <script src="js/aframe-master.min.js"></script>
     <script src="js/aframe-ar-nft.js"></script>
-    <script src="js/aframe-gif-shader.min.js"></script>
 </head>
 
 <style>
@@ -146,14 +145,11 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <a-nft type="nft" url="./data/01_bubble" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <!-- <a-image src="#01_bubble" material="shader:gif;src:url(assets/01_bubble.gif);" position="70 -200 -100" rotation="-90 0 0"
-                play="true" width=196.35 height=141.75></a-image> -->
             <a-image id="Img_01_bubble" src="#01_bubble1" position="70 -200 -95" rotation="-90 0 0" play="true"
                 width=200 height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-
             <a-video src="#vid_02" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
             </a-video>
         </a-nft>
@@ -291,7 +287,6 @@
             <img id="01_bubble118" src="assets/01/01_bubble (118).png">
             <img id="01_bubble119" src="assets/01/01_bubble (119).png">
             <img id="01_bubble120" src="assets/01/01_bubble (120).png">
-            <img id="01_bubble" src="assets/01_bubble-(1).gif">
             <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
                 response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
             </video>
