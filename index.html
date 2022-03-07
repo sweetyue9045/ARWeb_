@@ -139,31 +139,31 @@
         </a-nft>
         <a-nft type="nft" url="./data/06_leave" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-image id="Img_06_leave" src="#06_leave1" position="75 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+            <a-image id="Img_06_leave" src="#06_leave1" position="75 -200 -105" rotation="-90 0 0" play="true" width=200
+                height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/07_dragon" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <a-image id="Img_07_dragon" src="#07_dragon1" position="70 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/08_scarf" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-image id="Img_08_scarf" src="#08_scarf1" position="70 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+            <a-image id="Img_08_scarf" src="#08_scarf1" position="70 -200 -105" rotation="-90 0 0" play="true" width=200
+                height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/09_bird" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-image id="Img_09_bird" src="#09_bird1" position="70 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+            <a-image id="Img_09_bird" src="#09_bird1" position="70 -200 -105" rotation="-90 0 0" play="true" width=200
+                height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/10_blow" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-image id="Img_10_blow" src="#10_blow1" position="70 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+            <a-image id="Img_10_blow" src="#10_blow1" position="70 -200 -105" rotation="-90 0 0" play="true" width=200
+                height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <a-image id="Img_11_distance" src="#11_distance1" position="70 -200 -105" rotation="-90 0 0" play="true"
-            width=200 height=146.4></a-image>
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-assets>
             <!-- 01-120 -->
@@ -1395,7 +1395,9 @@
     <script>
         var time = 1;
         window.onload = function () {
-            setInterval(change, 50);
+            setTimeout(() => {
+                setInterval(change, 50);
+            }, 5000)
         };
 
         function change() {
