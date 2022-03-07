@@ -113,33 +113,8 @@
         <div>Loading, please wait...</div>
     </div>
     <div class="buttongroup" id="mybuttongroup">
-        <label><input type="radio" name="label" value="01" onclick="videocheck()" checked="checked">
-            <span class="btn-radio">01</span></label>
-        <label><input type="radio" name="label" value="02" onclick="videocheck()">
-            <span class="btn-radio">02</span></label>
-        <label><input type="radio" name="label" value="03" onclick="videocheck()">
-            <span class="btn-radio">03</span></label>
-        <label><input type="radio" name="label" value="04" onclick="videocheck()">
-            <span class="btn-radio">04</span></label>
-        <label><input type="radio" name="label" value="05" onclick="videocheck()">
-            <span class="btn-radio">05</span></label>
         <label><a class="a-btn" href="pages/02.html">06-11
             </a></label>
-    </div>
-    <div class="buttongroup mybuttons" id="mybuttons-01">
-        <input type="button" onclick="playvideo('vid_01')" class="buttons" value="PLAY">
-    </div>
-    <div class="buttongroup mybuttons" id="mybuttons-02">
-        <input type="button" onclick="playvideo('vid_02')" class="buttons" value="PLAY">
-    </div>
-    <div class="buttongroup mybuttons" id="mybuttons-03">
-        <input type="button" onclick="playvideo('vid_03')" class="buttons" value="PLAY">
-    </div>
-    <div class="buttongroup mybuttons" id="mybuttons-04">
-        <input type="button" onclick="playvideo('vid_04')" class="buttons" value="PLAY">
-    </div>
-    <div class="buttongroup mybuttons" id="mybuttons-05">
-        <input type="button" onclick="playvideo('vid_05')" class="buttons" value="PLAY">
     </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
@@ -150,23 +125,24 @@
         </a-nft>
         <a-nft type="nft" url="./data/02_ocean" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_02" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-video>
+            <a-image id="Img_02_ocean" src="#02_ocean1" position="70 -200 -95" rotation="-90 0 0" play="true"
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/03_sky" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-video src="#vid_03" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-video>
+            <a-image id="Img_03_sky" src="#03_sky1" position="70 -200 -95" rotation="-90 0 0" play="true"
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/04_fish" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-            <a-video src="#vid_04" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-video>
+            <a-image id="Img_04_fish" src="#04_fish1" position="70 -200 -95" rotation="-90 0 0" play="true"
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-nft type="nft" url="./data/05_island" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
-            <a-video src="#vid_05" position="70 -200 -100" rotation="-90 0 0" play="true" width=196.35 height=141.75>
-            </a-video>
+            <a-image id="Img_05_island" src="#05_island1" position="70 -200 -95" rotation="-90 0 0" play="true"
+                width=200 height=146.4></a-image>
         </a-nft>
         <a-assets>
+            <!-- 01-120 -->
             <img id="01_bubble1" src="assets/01/01_bubble (1).png">
             <img id="01_bubble2" src="assets/01/01_bubble (2).png">
             <img id="01_bubble3" src="assets/01/01_bubble (3).png">
@@ -287,55 +263,1130 @@
             <img id="01_bubble118" src="assets/01/01_bubble (118).png">
             <img id="01_bubble119" src="assets/01/01_bubble (119).png">
             <img id="01_bubble120" src="assets/01/01_bubble (120).png">
-            <video class="myvid" id="vid_01" src="assets/01_bubble (2).mp4" preload="auto" autoplay="false" loop="true"
-                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
-            <video class="myvid" id="vid_02" src="assets/02_ocean (2).mp4" preload="auto" autoplay="false" loop="true"
-                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
-            <video class="myvid" id="vid_03" src="assets/03_sky (2).mp4" preload="auto" autoplay="false" loop="true"
-                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
-            <video class="myvid" id="vid_04" src="assets/04_fish (2).mp4" preload="auto" autoplay="false" loop="true"
-                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
-            <video class="myvid" id="vid_05" src="assets/05_island (2).mp4" preload="auto" autoplay="false" loop="true"
-                response-type="arraybuffer" crossorigin webkit-playsinline playsinline>
-            </video>
-            </video>
+            <!-- 02-120 -->
+            <img id="02_ocean1" src="assets/02/02_ocean (1).png">
+            <img id="02_ocean2" src="assets/02/02_ocean (2).png">
+            <img id="02_ocean3" src="assets/02/02_ocean (3).png">
+            <img id="02_ocean4" src="assets/02/02_ocean (4).png">
+            <img id="02_ocean5" src="assets/02/02_ocean (5).png">
+            <img id="02_ocean6" src="assets/02/02_ocean (6).png">
+            <img id="02_ocean7" src="assets/02/02_ocean (7).png">
+            <img id="02_ocean8" src="assets/02/02_ocean (8).png">
+            <img id="02_ocean9" src="assets/02/02_ocean (9).png">
+            <img id="02_ocean10" src="assets/02/02_ocean (10).png">
+            <img id="02_ocean11" src="assets/02/02_ocean (11).png">
+            <img id="02_ocean12" src="assets/02/02_ocean (12).png">
+            <img id="02_ocean13" src="assets/02/02_ocean (13).png">
+            <img id="02_ocean14" src="assets/02/02_ocean (14).png">
+            <img id="02_ocean15" src="assets/02/02_ocean (15).png">
+            <img id="02_ocean16" src="assets/02/02_ocean (16).png">
+            <img id="02_ocean17" src="assets/02/02_ocean (17).png">
+            <img id="02_ocean18" src="assets/02/02_ocean (18).png">
+            <img id="02_ocean19" src="assets/02/02_ocean (19).png">
+            <img id="02_ocean20" src="assets/02/02_ocean (20).png">
+            <img id="02_ocean21" src="assets/02/02_ocean (21).png">
+            <img id="02_ocean22" src="assets/02/02_ocean (22).png">
+            <img id="02_ocean23" src="assets/02/02_ocean (23).png">
+            <img id="02_ocean24" src="assets/02/02_ocean (24).png">
+            <img id="02_ocean25" src="assets/02/02_ocean (25).png">
+            <img id="02_ocean26" src="assets/02/02_ocean (26).png">
+            <img id="02_ocean27" src="assets/02/02_ocean (27).png">
+            <img id="02_ocean28" src="assets/02/02_ocean (28).png">
+            <img id="02_ocean29" src="assets/02/02_ocean (29).png">
+            <img id="02_ocean30" src="assets/02/02_ocean (30).png">
+            <img id="02_ocean31" src="assets/02/02_ocean (31).png">
+            <img id="02_ocean32" src="assets/02/02_ocean (32).png">
+            <img id="02_ocean33" src="assets/02/02_ocean (33).png">
+            <img id="02_ocean34" src="assets/02/02_ocean (34).png">
+            <img id="02_ocean35" src="assets/02/02_ocean (35).png">
+            <img id="02_ocean36" src="assets/02/02_ocean (36).png">
+            <img id="02_ocean37" src="assets/02/02_ocean (37).png">
+            <img id="02_ocean38" src="assets/02/02_ocean (38).png">
+            <img id="02_ocean39" src="assets/02/02_ocean (39).png">
+            <img id="02_ocean40" src="assets/02/02_ocean (40).png">
+            <img id="02_ocean41" src="assets/02/02_ocean (41).png">
+            <img id="02_ocean42" src="assets/02/02_ocean (42).png">
+            <img id="02_ocean43" src="assets/02/02_ocean (43).png">
+            <img id="02_ocean44" src="assets/02/02_ocean (44).png">
+            <img id="02_ocean45" src="assets/02/02_ocean (45).png">
+            <img id="02_ocean46" src="assets/02/02_ocean (46).png">
+            <img id="02_ocean47" src="assets/02/02_ocean (47).png">
+            <img id="02_ocean48" src="assets/02/02_ocean (48).png">
+            <img id="02_ocean49" src="assets/02/02_ocean (49).png">
+            <img id="02_ocean50" src="assets/02/02_ocean (50).png">
+            <img id="02_ocean51" src="assets/02/02_ocean (51).png">
+            <img id="02_ocean52" src="assets/02/02_ocean (52).png">
+            <img id="02_ocean53" src="assets/02/02_ocean (53).png">
+            <img id="02_ocean54" src="assets/02/02_ocean (54).png">
+            <img id="02_ocean55" src="assets/02/02_ocean (55).png">
+            <img id="02_ocean56" src="assets/02/02_ocean (56).png">
+            <img id="02_ocean57" src="assets/02/02_ocean (57).png">
+            <img id="02_ocean58" src="assets/02/02_ocean (58).png">
+            <img id="02_ocean59" src="assets/02/02_ocean (59).png">
+            <img id="02_ocean60" src="assets/02/02_ocean (60).png">
+            <img id="02_ocean61" src="assets/02/02_ocean (61).png">
+            <img id="02_ocean62" src="assets/02/02_ocean (62).png">
+            <img id="02_ocean63" src="assets/02/02_ocean (63).png">
+            <img id="02_ocean64" src="assets/02/02_ocean (64).png">
+            <img id="02_ocean65" src="assets/02/02_ocean (65).png">
+            <img id="02_ocean66" src="assets/02/02_ocean (66).png">
+            <img id="02_ocean67" src="assets/02/02_ocean (67).png">
+            <img id="02_ocean68" src="assets/02/02_ocean (68).png">
+            <img id="02_ocean69" src="assets/02/02_ocean (69).png">
+            <img id="02_ocean70" src="assets/02/02_ocean (70).png">
+            <img id="02_ocean71" src="assets/02/02_ocean (71).png">
+            <img id="02_ocean72" src="assets/02/02_ocean (72).png">
+            <img id="02_ocean73" src="assets/02/02_ocean (73).png">
+            <img id="02_ocean74" src="assets/02/02_ocean (74).png">
+            <img id="02_ocean75" src="assets/02/02_ocean (75).png">
+            <img id="02_ocean76" src="assets/02/02_ocean (76).png">
+            <img id="02_ocean77" src="assets/02/02_ocean (77).png">
+            <img id="02_ocean78" src="assets/02/02_ocean (78).png">
+            <img id="02_ocean79" src="assets/02/02_ocean (79).png">
+            <img id="02_ocean80" src="assets/02/02_ocean (80).png">
+            <img id="02_ocean81" src="assets/02/02_ocean (81).png">
+            <img id="02_ocean82" src="assets/02/02_ocean (82).png">
+            <img id="02_ocean83" src="assets/02/02_ocean (83).png">
+            <img id="02_ocean84" src="assets/02/02_ocean (84).png">
+            <img id="02_ocean85" src="assets/02/02_ocean (85).png">
+            <img id="02_ocean86" src="assets/02/02_ocean (86).png">
+            <img id="02_ocean87" src="assets/02/02_ocean (87).png">
+            <img id="02_ocean88" src="assets/02/02_ocean (88).png">
+            <img id="02_ocean89" src="assets/02/02_ocean (89).png">
+            <img id="02_ocean90" src="assets/02/02_ocean (90).png">
+            <img id="02_ocean91" src="assets/02/02_ocean (91).png">
+            <img id="02_ocean92" src="assets/02/02_ocean (92).png">
+            <img id="02_ocean93" src="assets/02/02_ocean (93).png">
+            <img id="02_ocean94" src="assets/02/02_ocean (94).png">
+            <img id="02_ocean95" src="assets/02/02_ocean (95).png">
+            <img id="02_ocean96" src="assets/02/02_ocean (96).png">
+            <img id="02_ocean97" src="assets/02/02_ocean (97).png">
+            <img id="02_ocean98" src="assets/02/02_ocean (98).png">
+            <img id="02_ocean99" src="assets/02/02_ocean (99).png">
+            <img id="02_ocean100" src="assets/02/02_ocean (100).png">
+            <img id="02_ocean101" src="assets/02/02_ocean (101).png">
+            <img id="02_ocean102" src="assets/02/02_ocean (102).png">
+            <img id="02_ocean103" src="assets/02/02_ocean (103).png">
+            <img id="02_ocean104" src="assets/02/02_ocean (104).png">
+            <img id="02_ocean105" src="assets/02/02_ocean (105).png">
+            <img id="02_ocean106" src="assets/02/02_ocean (106).png">
+            <img id="02_ocean107" src="assets/02/02_ocean (107).png">
+            <img id="02_ocean108" src="assets/02/02_ocean (108).png">
+            <img id="02_ocean109" src="assets/02/02_ocean (109).png">
+            <img id="02_ocean110" src="assets/02/02_ocean (110).png">
+            <img id="02_ocean111" src="assets/02/02_ocean (111).png">
+            <img id="02_ocean112" src="assets/02/02_ocean (112).png">
+            <img id="02_ocean113" src="assets/02/02_ocean (113).png">
+            <img id="02_ocean114" src="assets/02/02_ocean (114).png">
+            <img id="02_ocean115" src="assets/02/02_ocean (115).png">
+            <img id="02_ocean116" src="assets/02/02_ocean (116).png">
+            <img id="02_ocean117" src="assets/02/02_ocean (117).png">
+            <img id="02_ocean118" src="assets/02/02_ocean (118).png">
+            <img id="02_ocean119" src="assets/02/02_ocean (119).png">
+            <img id="02_ocean120" src="assets/02/02_ocean (120).png">
+            <!-- 03-85 -->
+            <img id="03_sky1" src="assets/03/03_sky (1).png">
+            <img id="03_sky2" src="assets/03/03_sky (2).png">
+            <img id="03_sky3" src="assets/03/03_sky (3).png">
+            <img id="03_sky4" src="assets/03/03_sky (4).png">
+            <img id="03_sky5" src="assets/03/03_sky (5).png">
+            <img id="03_sky6" src="assets/03/03_sky (6).png">
+            <img id="03_sky7" src="assets/03/03_sky (7).png">
+            <img id="03_sky8" src="assets/03/03_sky (8).png">
+            <img id="03_sky9" src="assets/03/03_sky (9).png">
+            <img id="03_sky10" src="assets/03/03_sky (10).png">
+            <img id="03_sky11" src="assets/03/03_sky (11).png">
+            <img id="03_sky12" src="assets/03/03_sky (12).png">
+            <img id="03_sky13" src="assets/03/03_sky (13).png">
+            <img id="03_sky14" src="assets/03/03_sky (14).png">
+            <img id="03_sky15" src="assets/03/03_sky (15).png">
+            <img id="03_sky16" src="assets/03/03_sky (16).png">
+            <img id="03_sky17" src="assets/03/03_sky (17).png">
+            <img id="03_sky18" src="assets/03/03_sky (18).png">
+            <img id="03_sky19" src="assets/03/03_sky (19).png">
+            <img id="03_sky20" src="assets/03/03_sky (20).png">
+            <img id="03_sky21" src="assets/03/03_sky (21).png">
+            <img id="03_sky22" src="assets/03/03_sky (22).png">
+            <img id="03_sky23" src="assets/03/03_sky (23).png">
+            <img id="03_sky24" src="assets/03/03_sky (24).png">
+            <img id="03_sky25" src="assets/03/03_sky (25).png">
+            <img id="03_sky26" src="assets/03/03_sky (26).png">
+            <img id="03_sky27" src="assets/03/03_sky (27).png">
+            <img id="03_sky28" src="assets/03/03_sky (28).png">
+            <img id="03_sky29" src="assets/03/03_sky (29).png">
+            <img id="03_sky30" src="assets/03/03_sky (30).png">
+            <img id="03_sky31" src="assets/03/03_sky (31).png">
+            <img id="03_sky32" src="assets/03/03_sky (32).png">
+            <img id="03_sky33" src="assets/03/03_sky (33).png">
+            <img id="03_sky34" src="assets/03/03_sky (34).png">
+            <img id="03_sky35" src="assets/03/03_sky (35).png">
+            <img id="03_sky36" src="assets/03/03_sky (36).png">
+            <img id="03_sky37" src="assets/03/03_sky (37).png">
+            <img id="03_sky38" src="assets/03/03_sky (38).png">
+            <img id="03_sky39" src="assets/03/03_sky (39).png">
+            <img id="03_sky40" src="assets/03/03_sky (40).png">
+            <img id="03_sky41" src="assets/03/03_sky (41).png">
+            <img id="03_sky42" src="assets/03/03_sky (42).png">
+            <img id="03_sky43" src="assets/03/03_sky (43).png">
+            <img id="03_sky44" src="assets/03/03_sky (44).png">
+            <img id="03_sky45" src="assets/03/03_sky (45).png">
+            <img id="03_sky46" src="assets/03/03_sky (46).png">
+            <img id="03_sky47" src="assets/03/03_sky (47).png">
+            <img id="03_sky48" src="assets/03/03_sky (48).png">
+            <img id="03_sky49" src="assets/03/03_sky (49).png">
+            <img id="03_sky50" src="assets/03/03_sky (50).png">
+            <img id="03_sky51" src="assets/03/03_sky (51).png">
+            <img id="03_sky52" src="assets/03/03_sky (52).png">
+            <img id="03_sky53" src="assets/03/03_sky (53).png">
+            <img id="03_sky54" src="assets/03/03_sky (54).png">
+            <img id="03_sky55" src="assets/03/03_sky (55).png">
+            <img id="03_sky56" src="assets/03/03_sky (56).png">
+            <img id="03_sky57" src="assets/03/03_sky (57).png">
+            <img id="03_sky58" src="assets/03/03_sky (58).png">
+            <img id="03_sky59" src="assets/03/03_sky (59).png">
+            <img id="03_sky60" src="assets/03/03_sky (60).png">
+            <img id="03_sky61" src="assets/03/03_sky (61).png">
+            <img id="03_sky62" src="assets/03/03_sky (62).png">
+            <img id="03_sky63" src="assets/03/03_sky (63).png">
+            <img id="03_sky64" src="assets/03/03_sky (64).png">
+            <img id="03_sky65" src="assets/03/03_sky (65).png">
+            <img id="03_sky66" src="assets/03/03_sky (66).png">
+            <img id="03_sky67" src="assets/03/03_sky (67).png">
+            <img id="03_sky68" src="assets/03/03_sky (68).png">
+            <img id="03_sky69" src="assets/03/03_sky (69).png">
+            <img id="03_sky70" src="assets/03/03_sky (70).png">
+            <img id="03_sky71" src="assets/03/03_sky (71).png">
+            <img id="03_sky72" src="assets/03/03_sky (72).png">
+            <img id="03_sky73" src="assets/03/03_sky (73).png">
+            <img id="03_sky74" src="assets/03/03_sky (74).png">
+            <img id="03_sky75" src="assets/03/03_sky (75).png">
+            <img id="03_sky76" src="assets/03/03_sky (76).png">
+            <img id="03_sky77" src="assets/03/03_sky (77).png">
+            <img id="03_sky78" src="assets/03/03_sky (78).png">
+            <img id="03_sky79" src="assets/03/03_sky (79).png">
+            <img id="03_sky80" src="assets/03/03_sky (80).png">
+            <img id="03_sky81" src="assets/03/03_sky (81).png">
+            <img id="03_sky82" src="assets/03/03_sky (82).png">
+            <img id="03_sky83" src="assets/03/03_sky (83).png">
+            <img id="03_sky84" src="assets/03/03_sky (84).png">
+            <img id="03_sky85" src="assets/03/03_sky (85).png">
+            <!-- 04-87 -->
+            <img id="04_fish1" src="assets/04/04_fish (1).png">
+            <img id="04_fish2" src="assets/04/04_fish (2).png">
+            <img id="04_fish3" src="assets/04/04_fish (3).png">
+            <img id="04_fish4" src="assets/04/04_fish (4).png">
+            <img id="04_fish5" src="assets/04/04_fish (5).png">
+            <img id="04_fish6" src="assets/04/04_fish (6).png">
+            <img id="04_fish7" src="assets/04/04_fish (7).png">
+            <img id="04_fish8" src="assets/04/04_fish (8).png">
+            <img id="04_fish9" src="assets/04/04_fish (9).png">
+            <img id="04_fish10" src="assets/04/04_fish (10).png">
+            <img id="04_fish11" src="assets/04/04_fish (11).png">
+            <img id="04_fish12" src="assets/04/04_fish (12).png">
+            <img id="04_fish13" src="assets/04/04_fish (13).png">
+            <img id="04_fish14" src="assets/04/04_fish (14).png">
+            <img id="04_fish15" src="assets/04/04_fish (15).png">
+            <img id="04_fish16" src="assets/04/04_fish (16).png">
+            <img id="04_fish17" src="assets/04/04_fish (17).png">
+            <img id="04_fish18" src="assets/04/04_fish (18).png">
+            <img id="04_fish19" src="assets/04/04_fish (19).png">
+            <img id="04_fish20" src="assets/04/04_fish (20).png">
+            <img id="04_fish21" src="assets/04/04_fish (21).png">
+            <img id="04_fish22" src="assets/04/04_fish (22).png">
+            <img id="04_fish23" src="assets/04/04_fish (23).png">
+            <img id="04_fish24" src="assets/04/04_fish (24).png">
+            <img id="04_fish25" src="assets/04/04_fish (25).png">
+            <img id="04_fish26" src="assets/04/04_fish (26).png">
+            <img id="04_fish27" src="assets/04/04_fish (27).png">
+            <img id="04_fish28" src="assets/04/04_fish (28).png">
+            <img id="04_fish29" src="assets/04/04_fish (29).png">
+            <img id="04_fish30" src="assets/04/04_fish (30).png">
+            <img id="04_fish31" src="assets/04/04_fish (31).png">
+            <img id="04_fish32" src="assets/04/04_fish (32).png">
+            <img id="04_fish33" src="assets/04/04_fish (33).png">
+            <img id="04_fish34" src="assets/04/04_fish (34).png">
+            <img id="04_fish35" src="assets/04/04_fish (35).png">
+            <img id="04_fish36" src="assets/04/04_fish (36).png">
+            <img id="04_fish37" src="assets/04/04_fish (37).png">
+            <img id="04_fish38" src="assets/04/04_fish (38).png">
+            <img id="04_fish39" src="assets/04/04_fish (39).png">
+            <img id="04_fish40" src="assets/04/04_fish (40).png">
+            <img id="04_fish41" src="assets/04/04_fish (41).png">
+            <img id="04_fish42" src="assets/04/04_fish (42).png">
+            <img id="04_fish43" src="assets/04/04_fish (43).png">
+            <img id="04_fish44" src="assets/04/04_fish (44).png">
+            <img id="04_fish45" src="assets/04/04_fish (45).png">
+            <img id="04_fish46" src="assets/04/04_fish (46).png">
+            <img id="04_fish47" src="assets/04/04_fish (47).png">
+            <img id="04_fish48" src="assets/04/04_fish (48).png">
+            <img id="04_fish49" src="assets/04/04_fish (49).png">
+            <img id="04_fish50" src="assets/04/04_fish (50).png">
+            <img id="04_fish51" src="assets/04/04_fish (51).png">
+            <img id="04_fish52" src="assets/04/04_fish (52).png">
+            <img id="04_fish53" src="assets/04/04_fish (53).png">
+            <img id="04_fish54" src="assets/04/04_fish (54).png">
+            <img id="04_fish55" src="assets/04/04_fish (55).png">
+            <img id="04_fish56" src="assets/04/04_fish (56).png">
+            <img id="04_fish57" src="assets/04/04_fish (57).png">
+            <img id="04_fish58" src="assets/04/04_fish (58).png">
+            <img id="04_fish59" src="assets/04/04_fish (59).png">
+            <img id="04_fish60" src="assets/04/04_fish (60).png">
+            <img id="04_fish61" src="assets/04/04_fish (61).png">
+            <img id="04_fish62" src="assets/04/04_fish (62).png">
+            <img id="04_fish63" src="assets/04/04_fish (63).png">
+            <img id="04_fish64" src="assets/04/04_fish (64).png">
+            <img id="04_fish65" src="assets/04/04_fish (65).png">
+            <img id="04_fish66" src="assets/04/04_fish (66).png">
+            <img id="04_fish67" src="assets/04/04_fish (67).png">
+            <img id="04_fish68" src="assets/04/04_fish (68).png">
+            <img id="04_fish69" src="assets/04/04_fish (69).png">
+            <img id="04_fish70" src="assets/04/04_fish (70).png">
+            <img id="04_fish71" src="assets/04/04_fish (71).png">
+            <img id="04_fish72" src="assets/04/04_fish (72).png">
+            <img id="04_fish73" src="assets/04/04_fish (73).png">
+            <img id="04_fish74" src="assets/04/04_fish (74).png">
+            <img id="04_fish75" src="assets/04/04_fish (75).png">
+            <img id="04_fish76" src="assets/04/04_fish (76).png">
+            <img id="04_fish77" src="assets/04/04_fish (77).png">
+            <img id="04_fish78" src="assets/04/04_fish (78).png">
+            <img id="04_fish79" src="assets/04/04_fish (79).png">
+            <img id="04_fish80" src="assets/04/04_fish (80).png">
+            <img id="04_fish81" src="assets/04/04_fish (81).png">
+            <img id="04_fish82" src="assets/04/04_fish (82).png">
+            <img id="04_fish83" src="assets/04/04_fish (83).png">
+            <img id="04_fish84" src="assets/04/04_fish (84).png">
+            <img id="04_fish85" src="assets/04/04_fish (85).png">
+            <img id="04_fish86" src="assets/04/04_fish (86).png">
+            <img id="04_fish87" src="assets/04/04_fish (87).png">
+            <!-- 05-120 -->
+            <img id="05_island1" src="assets/05/05_island (1).png">
+            <img id="05_island2" src="assets/05/05_island (2).png">
+            <img id="05_island3" src="assets/05/05_island (3).png">
+            <img id="05_island4" src="assets/05/05_island (4).png">
+            <img id="05_island5" src="assets/05/05_island (5).png">
+            <img id="05_island6" src="assets/05/05_island (6).png">
+            <img id="05_island7" src="assets/05/05_island (7).png">
+            <img id="05_island8" src="assets/05/05_island (8).png">
+            <img id="05_island9" src="assets/05/05_island (9).png">
+            <img id="05_island10" src="assets/05/05_island (10).png">
+            <img id="05_island11" src="assets/05/05_island (11).png">
+            <img id="05_island12" src="assets/05/05_island (12).png">
+            <img id="05_island13" src="assets/05/05_island (13).png">
+            <img id="05_island14" src="assets/05/05_island (14).png">
+            <img id="05_island15" src="assets/05/05_island (15).png">
+            <img id="05_island16" src="assets/05/05_island (16).png">
+            <img id="05_island17" src="assets/05/05_island (17).png">
+            <img id="05_island18" src="assets/05/05_island (18).png">
+            <img id="05_island19" src="assets/05/05_island (19).png">
+            <img id="05_island20" src="assets/05/05_island (20).png">
+            <img id="05_island21" src="assets/05/05_island (21).png">
+            <img id="05_island22" src="assets/05/05_island (22).png">
+            <img id="05_island23" src="assets/05/05_island (23).png">
+            <img id="05_island24" src="assets/05/05_island (24).png">
+            <img id="05_island25" src="assets/05/05_island (25).png">
+            <img id="05_island26" src="assets/05/05_island (26).png">
+            <img id="05_island27" src="assets/05/05_island (27).png">
+            <img id="05_island28" src="assets/05/05_island (28).png">
+            <img id="05_island29" src="assets/05/05_island (29).png">
+            <img id="05_island30" src="assets/05/05_island (30).png">
+            <img id="05_island31" src="assets/05/05_island (31).png">
+            <img id="05_island32" src="assets/05/05_island (32).png">
+            <img id="05_island33" src="assets/05/05_island (33).png">
+            <img id="05_island34" src="assets/05/05_island (34).png">
+            <img id="05_island35" src="assets/05/05_island (35).png">
+            <img id="05_island36" src="assets/05/05_island (36).png">
+            <img id="05_island37" src="assets/05/05_island (37).png">
+            <img id="05_island38" src="assets/05/05_island (38).png">
+            <img id="05_island39" src="assets/05/05_island (39).png">
+            <img id="05_island40" src="assets/05/05_island (40).png">
+            <img id="05_island41" src="assets/05/05_island (41).png">
+            <img id="05_island42" src="assets/05/05_island (42).png">
+            <img id="05_island43" src="assets/05/05_island (43).png">
+            <img id="05_island44" src="assets/05/05_island (44).png">
+            <img id="05_island45" src="assets/05/05_island (45).png">
+            <img id="05_island46" src="assets/05/05_island (46).png">
+            <img id="05_island47" src="assets/05/05_island (47).png">
+            <img id="05_island48" src="assets/05/05_island (48).png">
+            <img id="05_island49" src="assets/05/05_island (49).png">
+            <img id="05_island50" src="assets/05/05_island (50).png">
+            <img id="05_island51" src="assets/05/05_island (51).png">
+            <img id="05_island52" src="assets/05/05_island (52).png">
+            <img id="05_island53" src="assets/05/05_island (53).png">
+            <img id="05_island54" src="assets/05/05_island (54).png">
+            <img id="05_island55" src="assets/05/05_island (55).png">
+            <img id="05_island56" src="assets/05/05_island (56).png">
+            <img id="05_island57" src="assets/05/05_island (57).png">
+            <img id="05_island58" src="assets/05/05_island (58).png">
+            <img id="05_island59" src="assets/05/05_island (59).png">
+            <img id="05_island60" src="assets/05/05_island (60).png">
+            <img id="05_island61" src="assets/05/05_island (61).png">
+            <img id="05_island62" src="assets/05/05_island (62).png">
+            <img id="05_island63" src="assets/05/05_island (63).png">
+            <img id="05_island64" src="assets/05/05_island (64).png">
+            <img id="05_island65" src="assets/05/05_island (65).png">
+            <img id="05_island66" src="assets/05/05_island (66).png">
+            <img id="05_island67" src="assets/05/05_island (67).png">
+            <img id="05_island68" src="assets/05/05_island (68).png">
+            <img id="05_island69" src="assets/05/05_island (69).png">
+            <img id="05_island70" src="assets/05/05_island (70).png">
+            <img id="05_island71" src="assets/05/05_island (71).png">
+            <img id="05_island72" src="assets/05/05_island (72).png">
+            <img id="05_island73" src="assets/05/05_island (73).png">
+            <img id="05_island74" src="assets/05/05_island (74).png">
+            <img id="05_island75" src="assets/05/05_island (75).png">
+            <img id="05_island76" src="assets/05/05_island (76).png">
+            <img id="05_island77" src="assets/05/05_island (77).png">
+            <img id="05_island78" src="assets/05/05_island (78).png">
+            <img id="05_island79" src="assets/05/05_island (79).png">
+            <img id="05_island80" src="assets/05/05_island (80).png">
+            <img id="05_island81" src="assets/05/05_island (81).png">
+            <img id="05_island82" src="assets/05/05_island (82).png">
+            <img id="05_island83" src="assets/05/05_island (83).png">
+            <img id="05_island84" src="assets/05/05_island (84).png">
+            <img id="05_island85" src="assets/05/05_island (85).png">
+            <img id="05_island86" src="assets/05/05_island (86).png">
+            <img id="05_island87" src="assets/05/05_island (87).png">
+            <img id="05_island88" src="assets/05/05_island (88).png">
+            <img id="05_island89" src="assets/05/05_island (89).png">
+            <img id="05_island90" src="assets/05/05_island (90).png">
+            <img id="05_island91" src="assets/05/05_island (91).png">
+            <img id="05_island92" src="assets/05/05_island (92).png">
+            <img id="05_island93" src="assets/05/05_island (93).png">
+            <img id="05_island94" src="assets/05/05_island (94).png">
+            <img id="05_island95" src="assets/05/05_island (95).png">
+            <img id="05_island96" src="assets/05/05_island (96).png">
+            <img id="05_island97" src="assets/05/05_island (97).png">
+            <img id="05_island98" src="assets/05/05_island (98).png">
+            <img id="05_island99" src="assets/05/05_island (99).png">
+            <img id="05_island100" src="assets/05/05_island (100).png">
+            <img id="05_island101" src="assets/05/05_island (101).png">
+            <img id="05_island102" src="assets/05/05_island (102).png">
+            <img id="05_island103" src="assets/05/05_island (103).png">
+            <img id="05_island104" src="assets/05/05_island (104).png">
+            <img id="05_island105" src="assets/05/05_island (105).png">
+            <img id="05_island106" src="assets/05/05_island (106).png">
+            <img id="05_island107" src="assets/05/05_island (107).png">
+            <img id="05_island108" src="assets/05/05_island (108).png">
+            <img id="05_island109" src="assets/05/05_island (109).png">
+            <img id="05_island110" src="assets/05/05_island (110).png">
+            <img id="05_island111" src="assets/05/05_island (111).png">
+            <img id="05_island112" src="assets/05/05_island (112).png">
+            <img id="05_island113" src="assets/05/05_island (113).png">
+            <img id="05_island114" src="assets/05/05_island (114).png">
+            <img id="05_island115" src="assets/05/05_island (115).png">
+            <img id="05_island116" src="assets/05/05_island (116).png">
+            <img id="05_island117" src="assets/05/05_island (117).png">
+            <img id="05_island118" src="assets/05/05_island (118).png">
+            <img id="05_island119" src="assets/05/05_island (119).png">
+            <img id="05_island120" src="assets/05/05_island (120).png">
+            <!-- 06-96 -->
+            <img id="06_leave1" src="assets/06/06_leave (1).png">
+            <img id="06_leave2" src="assets/06/06_leave (2).png">
+            <img id="06_leave3" src="assets/06/06_leave (3).png">
+            <img id="06_leave4" src="assets/06/06_leave (4).png">
+            <img id="06_leave5" src="assets/06/06_leave (5).png">
+            <img id="06_leave6" src="assets/06/06_leave (6).png">
+            <img id="06_leave7" src="assets/06/06_leave (7).png">
+            <img id="06_leave8" src="assets/06/06_leave (8).png">
+            <img id="06_leave9" src="assets/06/06_leave (9).png">
+            <img id="06_leave10" src="assets/06/06_leave (10).png">
+            <img id="06_leave11" src="assets/06/06_leave (11).png">
+            <img id="06_leave12" src="assets/06/06_leave (12).png">
+            <img id="06_leave13" src="assets/06/06_leave (13).png">
+            <img id="06_leave14" src="assets/06/06_leave (14).png">
+            <img id="06_leave15" src="assets/06/06_leave (15).png">
+            <img id="06_leave16" src="assets/06/06_leave (16).png">
+            <img id="06_leave17" src="assets/06/06_leave (17).png">
+            <img id="06_leave18" src="assets/06/06_leave (18).png">
+            <img id="06_leave19" src="assets/06/06_leave (19).png">
+            <img id="06_leave20" src="assets/06/06_leave (20).png">
+            <img id="06_leave21" src="assets/06/06_leave (21).png">
+            <img id="06_leave22" src="assets/06/06_leave (22).png">
+            <img id="06_leave23" src="assets/06/06_leave (23).png">
+            <img id="06_leave24" src="assets/06/06_leave (24).png">
+            <img id="06_leave25" src="assets/06/06_leave (25).png">
+            <img id="06_leave26" src="assets/06/06_leave (26).png">
+            <img id="06_leave27" src="assets/06/06_leave (27).png">
+            <img id="06_leave28" src="assets/06/06_leave (28).png">
+            <img id="06_leave29" src="assets/06/06_leave (29).png">
+            <img id="06_leave30" src="assets/06/06_leave (30).png">
+            <img id="06_leave31" src="assets/06/06_leave (31).png">
+            <img id="06_leave32" src="assets/06/06_leave (32).png">
+            <img id="06_leave33" src="assets/06/06_leave (33).png">
+            <img id="06_leave34" src="assets/06/06_leave (34).png">
+            <img id="06_leave35" src="assets/06/06_leave (35).png">
+            <img id="06_leave36" src="assets/06/06_leave (36).png">
+            <img id="06_leave37" src="assets/06/06_leave (37).png">
+            <img id="06_leave38" src="assets/06/06_leave (38).png">
+            <img id="06_leave39" src="assets/06/06_leave (39).png">
+            <img id="06_leave40" src="assets/06/06_leave (40).png">
+            <img id="06_leave41" src="assets/06/06_leave (41).png">
+            <img id="06_leave42" src="assets/06/06_leave (42).png">
+            <img id="06_leave43" src="assets/06/06_leave (43).png">
+            <img id="06_leave44" src="assets/06/06_leave (44).png">
+            <img id="06_leave45" src="assets/06/06_leave (45).png">
+            <img id="06_leave46" src="assets/06/06_leave (46).png">
+            <img id="06_leave47" src="assets/06/06_leave (47).png">
+            <img id="06_leave48" src="assets/06/06_leave (48).png">
+            <img id="06_leave49" src="assets/06/06_leave (49).png">
+            <img id="06_leave50" src="assets/06/06_leave (50).png">
+            <img id="06_leave51" src="assets/06/06_leave (51).png">
+            <img id="06_leave52" src="assets/06/06_leave (52).png">
+            <img id="06_leave53" src="assets/06/06_leave (53).png">
+            <img id="06_leave54" src="assets/06/06_leave (54).png">
+            <img id="06_leave55" src="assets/06/06_leave (55).png">
+            <img id="06_leave56" src="assets/06/06_leave (56).png">
+            <img id="06_leave57" src="assets/06/06_leave (57).png">
+            <img id="06_leave58" src="assets/06/06_leave (58).png">
+            <img id="06_leave59" src="assets/06/06_leave (59).png">
+            <img id="06_leave60" src="assets/06/06_leave (60).png">
+            <img id="06_leave61" src="assets/06/06_leave (61).png">
+            <img id="06_leave62" src="assets/06/06_leave (62).png">
+            <img id="06_leave63" src="assets/06/06_leave (63).png">
+            <img id="06_leave64" src="assets/06/06_leave (64).png">
+            <img id="06_leave65" src="assets/06/06_leave (65).png">
+            <img id="06_leave66" src="assets/06/06_leave (66).png">
+            <img id="06_leave67" src="assets/06/06_leave (67).png">
+            <img id="06_leave68" src="assets/06/06_leave (68).png">
+            <img id="06_leave69" src="assets/06/06_leave (69).png">
+            <img id="06_leave70" src="assets/06/06_leave (70).png">
+            <img id="06_leave71" src="assets/06/06_leave (71).png">
+            <img id="06_leave72" src="assets/06/06_leave (72).png">
+            <img id="06_leave73" src="assets/06/06_leave (73).png">
+            <img id="06_leave74" src="assets/06/06_leave (74).png">
+            <img id="06_leave75" src="assets/06/06_leave (75).png">
+            <img id="06_leave76" src="assets/06/06_leave (76).png">
+            <img id="06_leave77" src="assets/06/06_leave (77).png">
+            <img id="06_leave78" src="assets/06/06_leave (78).png">
+            <img id="06_leave79" src="assets/06/06_leave (79).png">
+            <img id="06_leave80" src="assets/06/06_leave (80).png">
+            <img id="06_leave81" src="assets/06/06_leave (81).png">
+            <img id="06_leave82" src="assets/06/06_leave (82).png">
+            <img id="06_leave83" src="assets/06/06_leave (83).png">
+            <img id="06_leave84" src="assets/06/06_leave (84).png">
+            <img id="06_leave85" src="assets/06/06_leave (85).png">
+            <img id="06_leave86" src="assets/06/06_leave (86).png">
+            <img id="06_leave87" src="assets/06/06_leave (87).png">
+            <img id="06_leave88" src="assets/06/06_leave (88).png">
+            <img id="06_leave89" src="assets/06/06_leave (89).png">
+            <img id="06_leave90" src="assets/06/06_leave (90).png">
+            <img id="06_leave91" src="assets/06/06_leave (91).png">
+            <img id="06_leave92" src="assets/06/06_leave (92).png">
+            <img id="06_leave93" src="assets/06/06_leave (93).png">
+            <img id="06_leave94" src="assets/06/06_leave (94).png">
+            <img id="06_leave95" src="assets/06/06_leave (95).png">
+            <img id="06_leave96" src="assets/06/06_leave (96).png">
+            <!-- 07-120 -->
+            <img id="07_dragon1" src="assets/07/07_dragon (1).png">
+            <img id="07_dragon2" src="assets/07/07_dragon (2).png">
+            <img id="07_dragon3" src="assets/07/07_dragon (3).png">
+            <img id="07_dragon4" src="assets/07/07_dragon (4).png">
+            <img id="07_dragon5" src="assets/07/07_dragon (5).png">
+            <img id="07_dragon6" src="assets/07/07_dragon (6).png">
+            <img id="07_dragon7" src="assets/07/07_dragon (7).png">
+            <img id="07_dragon8" src="assets/07/07_dragon (8).png">
+            <img id="07_dragon9" src="assets/07/07_dragon (9).png">
+            <img id="07_dragon10" src="assets/07/07_dragon (10).png">
+            <img id="07_dragon11" src="assets/07/07_dragon (11).png">
+            <img id="07_dragon12" src="assets/07/07_dragon (12).png">
+            <img id="07_dragon13" src="assets/07/07_dragon (13).png">
+            <img id="07_dragon14" src="assets/07/07_dragon (14).png">
+            <img id="07_dragon15" src="assets/07/07_dragon (15).png">
+            <img id="07_dragon16" src="assets/07/07_dragon (16).png">
+            <img id="07_dragon17" src="assets/07/07_dragon (17).png">
+            <img id="07_dragon18" src="assets/07/07_dragon (18).png">
+            <img id="07_dragon19" src="assets/07/07_dragon (19).png">
+            <img id="07_dragon20" src="assets/07/07_dragon (20).png">
+            <img id="07_dragon21" src="assets/07/07_dragon (21).png">
+            <img id="07_dragon22" src="assets/07/07_dragon (22).png">
+            <img id="07_dragon23" src="assets/07/07_dragon (23).png">
+            <img id="07_dragon24" src="assets/07/07_dragon (24).png">
+            <img id="07_dragon25" src="assets/07/07_dragon (25).png">
+            <img id="07_dragon26" src="assets/07/07_dragon (26).png">
+            <img id="07_dragon27" src="assets/07/07_dragon (27).png">
+            <img id="07_dragon28" src="assets/07/07_dragon (28).png">
+            <img id="07_dragon29" src="assets/07/07_dragon (29).png">
+            <img id="07_dragon30" src="assets/07/07_dragon (30).png">
+            <img id="07_dragon31" src="assets/07/07_dragon (31).png">
+            <img id="07_dragon32" src="assets/07/07_dragon (32).png">
+            <img id="07_dragon33" src="assets/07/07_dragon (33).png">
+            <img id="07_dragon34" src="assets/07/07_dragon (34).png">
+            <img id="07_dragon35" src="assets/07/07_dragon (35).png">
+            <img id="07_dragon36" src="assets/07/07_dragon (36).png">
+            <img id="07_dragon37" src="assets/07/07_dragon (37).png">
+            <img id="07_dragon38" src="assets/07/07_dragon (38).png">
+            <img id="07_dragon39" src="assets/07/07_dragon (39).png">
+            <img id="07_dragon40" src="assets/07/07_dragon (40).png">
+            <img id="07_dragon41" src="assets/07/07_dragon (41).png">
+            <img id="07_dragon42" src="assets/07/07_dragon (42).png">
+            <img id="07_dragon43" src="assets/07/07_dragon (43).png">
+            <img id="07_dragon44" src="assets/07/07_dragon (44).png">
+            <img id="07_dragon45" src="assets/07/07_dragon (45).png">
+            <img id="07_dragon46" src="assets/07/07_dragon (46).png">
+            <img id="07_dragon47" src="assets/07/07_dragon (47).png">
+            <img id="07_dragon48" src="assets/07/07_dragon (48).png">
+            <img id="07_dragon49" src="assets/07/07_dragon (49).png">
+            <img id="07_dragon50" src="assets/07/07_dragon (50).png">
+            <img id="07_dragon51" src="assets/07/07_dragon (51).png">
+            <img id="07_dragon52" src="assets/07/07_dragon (52).png">
+            <img id="07_dragon53" src="assets/07/07_dragon (53).png">
+            <img id="07_dragon54" src="assets/07/07_dragon (54).png">
+            <img id="07_dragon55" src="assets/07/07_dragon (55).png">
+            <img id="07_dragon56" src="assets/07/07_dragon (56).png">
+            <img id="07_dragon57" src="assets/07/07_dragon (57).png">
+            <img id="07_dragon58" src="assets/07/07_dragon (58).png">
+            <img id="07_dragon59" src="assets/07/07_dragon (59).png">
+            <img id="07_dragon60" src="assets/07/07_dragon (60).png">
+            <img id="07_dragon61" src="assets/07/07_dragon (61).png">
+            <img id="07_dragon62" src="assets/07/07_dragon (62).png">
+            <img id="07_dragon63" src="assets/07/07_dragon (63).png">
+            <img id="07_dragon64" src="assets/07/07_dragon (64).png">
+            <img id="07_dragon65" src="assets/07/07_dragon (65).png">
+            <img id="07_dragon66" src="assets/07/07_dragon (66).png">
+            <img id="07_dragon67" src="assets/07/07_dragon (67).png">
+            <img id="07_dragon68" src="assets/07/07_dragon (68).png">
+            <img id="07_dragon69" src="assets/07/07_dragon (69).png">
+            <img id="07_dragon70" src="assets/07/07_dragon (70).png">
+            <img id="07_dragon71" src="assets/07/07_dragon (71).png">
+            <img id="07_dragon72" src="assets/07/07_dragon (72).png">
+            <img id="07_dragon73" src="assets/07/07_dragon (73).png">
+            <img id="07_dragon74" src="assets/07/07_dragon (74).png">
+            <img id="07_dragon75" src="assets/07/07_dragon (75).png">
+            <img id="07_dragon76" src="assets/07/07_dragon (76).png">
+            <img id="07_dragon77" src="assets/07/07_dragon (77).png">
+            <img id="07_dragon78" src="assets/07/07_dragon (78).png">
+            <img id="07_dragon79" src="assets/07/07_dragon (79).png">
+            <img id="07_dragon80" src="assets/07/07_dragon (80).png">
+            <img id="07_dragon81" src="assets/07/07_dragon (81).png">
+            <img id="07_dragon82" src="assets/07/07_dragon (82).png">
+            <img id="07_dragon83" src="assets/07/07_dragon (83).png">
+            <img id="07_dragon84" src="assets/07/07_dragon (84).png">
+            <img id="07_dragon85" src="assets/07/07_dragon (85).png">
+            <img id="07_dragon86" src="assets/07/07_dragon (86).png">
+            <img id="07_dragon87" src="assets/07/07_dragon (87).png">
+            <img id="07_dragon88" src="assets/07/07_dragon (88).png">
+            <img id="07_dragon89" src="assets/07/07_dragon (89).png">
+            <img id="07_dragon90" src="assets/07/07_dragon (90).png">
+            <img id="07_dragon91" src="assets/07/07_dragon (91).png">
+            <img id="07_dragon92" src="assets/07/07_dragon (92).png">
+            <img id="07_dragon93" src="assets/07/07_dragon (93).png">
+            <img id="07_dragon94" src="assets/07/07_dragon (94).png">
+            <img id="07_dragon95" src="assets/07/07_dragon (95).png">
+            <img id="07_dragon96" src="assets/07/07_dragon (96).png">
+            <img id="07_dragon97" src="assets/07/07_dragon (97).png">
+            <img id="07_dragon98" src="assets/07/07_dragon (98).png">
+            <img id="07_dragon99" src="assets/07/07_dragon (99).png">
+            <img id="07_dragon100" src="assets/07/07_dragon (100).png">
+            <img id="07_dragon101" src="assets/07/07_dragon (101).png">
+            <img id="07_dragon102" src="assets/07/07_dragon (102).png">
+            <img id="07_dragon103" src="assets/07/07_dragon (103).png">
+            <img id="07_dragon104" src="assets/07/07_dragon (104).png">
+            <img id="07_dragon105" src="assets/07/07_dragon (105).png">
+            <img id="07_dragon106" src="assets/07/07_dragon (106).png">
+            <img id="07_dragon107" src="assets/07/07_dragon (107).png">
+            <img id="07_dragon108" src="assets/07/07_dragon (108).png">
+            <img id="07_dragon109" src="assets/07/07_dragon (109).png">
+            <img id="07_dragon110" src="assets/07/07_dragon (110).png">
+            <img id="07_dragon111" src="assets/07/07_dragon (111).png">
+            <img id="07_dragon112" src="assets/07/07_dragon (112).png">
+            <img id="07_dragon113" src="assets/07/07_dragon (113).png">
+            <img id="07_dragon114" src="assets/07/07_dragon (114).png">
+            <img id="07_dragon115" src="assets/07/07_dragon (115).png">
+            <img id="07_dragon116" src="assets/07/07_dragon (116).png">
+            <img id="07_dragon117" src="assets/07/07_dragon (117).png">
+            <img id="07_dragon118" src="assets/07/07_dragon (118).png">
+            <img id="07_dragon119" src="assets/07/07_dragon (119).png">
+            <img id="07_dragon120" src="assets/07/07_dragon (120).png">
+            <!-- 08- -->
+            <img id="08_scarf1" src="assets/08/08_scarf (1).png">
+            <img id="08_scarf2" src="assets/08/08_scarf (2).png">
+            <img id="08_scarf3" src="assets/08/08_scarf (3).png">
+            <img id="08_scarf4" src="assets/08/08_scarf (4).png">
+            <img id="08_scarf5" src="assets/08/08_scarf (5).png">
+            <img id="08_scarf6" src="assets/08/08_scarf (6).png">
+            <img id="08_scarf7" src="assets/08/08_scarf (7).png">
+            <img id="08_scarf8" src="assets/08/08_scarf (8).png">
+            <img id="08_scarf9" src="assets/08/08_scarf (9).png">
+            <img id="08_scarf10" src="assets/08/08_scarf (10).png">
+            <img id="08_scarf11" src="assets/08/08_scarf (11).png">
+            <img id="08_scarf12" src="assets/08/08_scarf (12).png">
+            <img id="08_scarf13" src="assets/08/08_scarf (13).png">
+            <img id="08_scarf14" src="assets/08/08_scarf (14).png">
+            <img id="08_scarf15" src="assets/08/08_scarf (15).png">
+            <img id="08_scarf16" src="assets/08/08_scarf (16).png">
+            <img id="08_scarf17" src="assets/08/08_scarf (17).png">
+            <img id="08_scarf18" src="assets/08/08_scarf (18).png">
+            <img id="08_scarf19" src="assets/08/08_scarf (19).png">
+            <img id="08_scarf20" src="assets/08/08_scarf (20).png">
+            <img id="08_scarf21" src="assets/08/08_scarf (21).png">
+            <img id="08_scarf22" src="assets/08/08_scarf (22).png">
+            <img id="08_scarf23" src="assets/08/08_scarf (23).png">
+            <img id="08_scarf24" src="assets/08/08_scarf (24).png">
+            <img id="08_scarf25" src="assets/08/08_scarf (25).png">
+            <img id="08_scarf26" src="assets/08/08_scarf (26).png">
+            <img id="08_scarf27" src="assets/08/08_scarf (27).png">
+            <img id="08_scarf28" src="assets/08/08_scarf (28).png">
+            <img id="08_scarf29" src="assets/08/08_scarf (29).png">
+            <img id="08_scarf30" src="assets/08/08_scarf (30).png">
+            <img id="08_scarf31" src="assets/08/08_scarf (31).png">
+            <img id="08_scarf32" src="assets/08/08_scarf (32).png">
+            <img id="08_scarf33" src="assets/08/08_scarf (33).png">
+            <img id="08_scarf34" src="assets/08/08_scarf (34).png">
+            <img id="08_scarf35" src="assets/08/08_scarf (35).png">
+            <img id="08_scarf36" src="assets/08/08_scarf (36).png">
+            <img id="08_scarf37" src="assets/08/08_scarf (37).png">
+            <img id="08_scarf38" src="assets/08/08_scarf (38).png">
+            <img id="08_scarf39" src="assets/08/08_scarf (39).png">
+            <img id="08_scarf40" src="assets/08/08_scarf (40).png">
+            <img id="08_scarf41" src="assets/08/08_scarf (41).png">
+            <img id="08_scarf42" src="assets/08/08_scarf (42).png">
+            <img id="08_scarf43" src="assets/08/08_scarf (43).png">
+            <img id="08_scarf44" src="assets/08/08_scarf (44).png">
+            <img id="08_scarf45" src="assets/08/08_scarf (45).png">
+            <img id="08_scarf46" src="assets/08/08_scarf (46).png">
+            <img id="08_scarf47" src="assets/08/08_scarf (47).png">
+            <img id="08_scarf48" src="assets/08/08_scarf (48).png">
+            <img id="08_scarf49" src="assets/08/08_scarf (49).png">
+            <img id="08_scarf50" src="assets/08/08_scarf (50).png">
+            <img id="08_scarf51" src="assets/08/08_scarf (51).png">
+            <img id="08_scarf52" src="assets/08/08_scarf (52).png">
+            <img id="08_scarf53" src="assets/08/08_scarf (53).png">
+            <img id="08_scarf54" src="assets/08/08_scarf (54).png">
+            <img id="08_scarf55" src="assets/08/08_scarf (55).png">
+            <img id="08_scarf56" src="assets/08/08_scarf (56).png">
+            <img id="08_scarf57" src="assets/08/08_scarf (57).png">
+            <img id="08_scarf58" src="assets/08/08_scarf (58).png">
+            <img id="08_scarf59" src="assets/08/08_scarf (59).png">
+            <img id="08_scarf60" src="assets/08/08_scarf (60).png">
+            <img id="08_scarf61" src="assets/08/08_scarf (61).png">
+            <img id="08_scarf62" src="assets/08/08_scarf (62).png">
+            <img id="08_scarf63" src="assets/08/08_scarf (63).png">
+            <img id="08_scarf64" src="assets/08/08_scarf (64).png">
+            <img id="08_scarf65" src="assets/08/08_scarf (65).png">
+            <img id="08_scarf66" src="assets/08/08_scarf (66).png">
+            <img id="08_scarf67" src="assets/08/08_scarf (67).png">
+            <img id="08_scarf68" src="assets/08/08_scarf (68).png">
+            <img id="08_scarf69" src="assets/08/08_scarf (69).png">
+            <img id="08_scarf70" src="assets/08/08_scarf (70).png">
+            <img id="08_scarf71" src="assets/08/08_scarf (71).png">
+            <img id="08_scarf72" src="assets/08/08_scarf (72).png">
+            <img id="08_scarf73" src="assets/08/08_scarf (73).png">
+            <img id="08_scarf74" src="assets/08/08_scarf (74).png">
+            <img id="08_scarf75" src="assets/08/08_scarf (75).png">
+            <img id="08_scarf76" src="assets/08/08_scarf (76).png">
+            <img id="08_scarf77" src="assets/08/08_scarf (77).png">
+            <img id="08_scarf78" src="assets/08/08_scarf (78).png">
+            <img id="08_scarf79" src="assets/08/08_scarf (79).png">
+            <img id="08_scarf80" src="assets/08/08_scarf (80).png">
+            <img id="08_scarf81" src="assets/08/08_scarf (81).png">
+            <img id="08_scarf82" src="assets/08/08_scarf (82).png">
+            <img id="08_scarf83" src="assets/08/08_scarf (83).png">
+            <img id="08_scarf84" src="assets/08/08_scarf (84).png">
+            <img id="08_scarf85" src="assets/08/08_scarf (85).png">
+            <img id="08_scarf86" src="assets/08/08_scarf (86).png">
+            <img id="08_scarf87" src="assets/08/08_scarf (87).png">
+            <img id="08_scarf88" src="assets/08/08_scarf (88).png">
+            <img id="08_scarf89" src="assets/08/08_scarf (89).png">
+            <img id="08_scarf90" src="assets/08/08_scarf (90).png">
+            <img id="08_scarf91" src="assets/08/08_scarf (91).png">
+            <img id="08_scarf92" src="assets/08/08_scarf (92).png">
+            <img id="08_scarf93" src="assets/08/08_scarf (93).png">
+            <img id="08_scarf94" src="assets/08/08_scarf (94).png">
+            <img id="08_scarf95" src="assets/08/08_scarf (95).png">
+            <img id="08_scarf96" src="assets/08/08_scarf (96).png">
+            <img id="08_scarf97" src="assets/08/08_scarf (97).png">
+            <img id="08_scarf98" src="assets/08/08_scarf (98).png">
+            <img id="08_scarf99" src="assets/08/08_scarf (99).png">
+            <img id="08_scarf100" src="assets/08/08_scarf (100).png">
+            <img id="08_scarf101" src="assets/08/08_scarf (101).png">
+            <img id="08_scarf102" src="assets/08/08_scarf (102).png">
+            <img id="08_scarf103" src="assets/08/08_scarf (103).png">
+            <img id="08_scarf104" src="assets/08/08_scarf (104).png">
+            <img id="08_scarf105" src="assets/08/08_scarf (105).png">
+            <img id="08_scarf106" src="assets/08/08_scarf (106).png">
+            <img id="08_scarf107" src="assets/08/08_scarf (107).png">
+            <img id="08_scarf108" src="assets/08/08_scarf (108).png">
+            <img id="08_scarf109" src="assets/08/08_scarf (109).png">
+            <img id="08_scarf110" src="assets/08/08_scarf (110).png">
+            <img id="08_scarf111" src="assets/08/08_scarf (111).png">
+            <img id="08_scarf112" src="assets/08/08_scarf (112).png">
+            <img id="08_scarf113" src="assets/08/08_scarf (113).png">
+            <img id="08_scarf114" src="assets/08/08_scarf (114).png">
+            <img id="08_scarf115" src="assets/08/08_scarf (115).png">
+            <img id="08_scarf116" src="assets/08/08_scarf (116).png">
+            <img id="08_scarf117" src="assets/08/08_scarf (117).png">
+            <img id="08_scarf118" src="assets/08/08_scarf (118).png">
+            <img id="08_scarf119" src="assets/08/08_scarf (119).png">
+            <img id="08_scarf120" src="assets/08/08_scarf (120).png">
+            <img id="08_scarf121" src="assets/08/08_scarf (121).png">
+            <img id="08_scarf122" src="assets/08/08_scarf (122).png">
+            <img id="08_scarf123" src="assets/08/08_scarf (123).png">
+            <img id="08_scarf124" src="assets/08/08_scarf (124).png">
+            <img id="08_scarf125" src="assets/08/08_scarf (125).png">
+            <img id="08_scarf126" src="assets/08/08_scarf (126).png">
+            <img id="08_scarf127" src="assets/08/08_scarf (127).png">
+            <img id="08_scarf128" src="assets/08/08_scarf (128).png">
+            <img id="08_scarf129" src="assets/08/08_scarf (129).png">
+            <img id="08_scarf130" src="assets/08/08_scarf (130).png">
+            <img id="08_scarf131" src="assets/08/08_scarf (131).png">
+            <img id="08_scarf132" src="assets/08/08_scarf (132).png">
+            <img id="08_scarf133" src="assets/08/08_scarf (133).png">
+            <img id="08_scarf134" src="assets/08/08_scarf (134).png">
+            <img id="08_scarf135" src="assets/08/08_scarf (135).png">
+            <img id="08_scarf136" src="assets/08/08_scarf (136).png">
+            <img id="08_scarf137" src="assets/08/08_scarf (137).png">
+            <img id="08_scarf138" src="assets/08/08_scarf (138).png">
+            <img id="08_scarf139" src="assets/08/08_scarf (139).png">
+            <img id="08_scarf140" src="assets/08/08_scarf (140).png">
+            <img id="08_scarf141" src="assets/08/08_scarf (141).png">
+            <img id="08_scarf142" src="assets/08/08_scarf (142).png">
+            <img id="08_scarf143" src="assets/08/08_scarf (143).png">
+            <img id="08_scarf144" src="assets/08/08_scarf (144).png">
+            <img id="08_scarf145" src="assets/08/08_scarf (145).png">
+            <img id="08_scarf146" src="assets/08/08_scarf (146).png">
+            <img id="08_scarf147" src="assets/08/08_scarf (147).png">
+            <img id="08_scarf148" src="assets/08/08_scarf (148).png">
+            <img id="08_scarf149" src="assets/08/08_scarf (149).png">
+            <img id="08_scarf150" src="assets/08/08_scarf (150).png">
+            <!-- 09-120 -->
+            <img id="09_bird1" src="assets/09/09_bird (1).png">
+            <img id="09_bird2" src="assets/09/09_bird (2).png">
+            <img id="09_bird3" src="assets/09/09_bird (3).png">
+            <img id="09_bird4" src="assets/09/09_bird (4).png">
+            <img id="09_bird5" src="assets/09/09_bird (5).png">
+            <img id="09_bird6" src="assets/09/09_bird (6).png">
+            <img id="09_bird7" src="assets/09/09_bird (7).png">
+            <img id="09_bird8" src="assets/09/09_bird (8).png">
+            <img id="09_bird9" src="assets/09/09_bird (9).png">
+            <img id="09_bird10" src="assets/09/09_bird (10).png">
+            <img id="09_bird11" src="assets/09/09_bird (11).png">
+            <img id="09_bird12" src="assets/09/09_bird (12).png">
+            <img id="09_bird13" src="assets/09/09_bird (13).png">
+            <img id="09_bird14" src="assets/09/09_bird (14).png">
+            <img id="09_bird15" src="assets/09/09_bird (15).png">
+            <img id="09_bird16" src="assets/09/09_bird (16).png">
+            <img id="09_bird17" src="assets/09/09_bird (17).png">
+            <img id="09_bird18" src="assets/09/09_bird (18).png">
+            <img id="09_bird19" src="assets/09/09_bird (19).png">
+            <img id="09_bird20" src="assets/09/09_bird (20).png">
+            <img id="09_bird21" src="assets/09/09_bird (21).png">
+            <img id="09_bird22" src="assets/09/09_bird (22).png">
+            <img id="09_bird23" src="assets/09/09_bird (23).png">
+            <img id="09_bird24" src="assets/09/09_bird (24).png">
+            <img id="09_bird25" src="assets/09/09_bird (25).png">
+            <img id="09_bird26" src="assets/09/09_bird (26).png">
+            <img id="09_bird27" src="assets/09/09_bird (27).png">
+            <img id="09_bird28" src="assets/09/09_bird (28).png">
+            <img id="09_bird29" src="assets/09/09_bird (29).png">
+            <img id="09_bird30" src="assets/09/09_bird (30).png">
+            <img id="09_bird31" src="assets/09/09_bird (31).png">
+            <img id="09_bird32" src="assets/09/09_bird (32).png">
+            <img id="09_bird33" src="assets/09/09_bird (33).png">
+            <img id="09_bird34" src="assets/09/09_bird (34).png">
+            <img id="09_bird35" src="assets/09/09_bird (35).png">
+            <img id="09_bird36" src="assets/09/09_bird (36).png">
+            <img id="09_bird37" src="assets/09/09_bird (37).png">
+            <img id="09_bird38" src="assets/09/09_bird (38).png">
+            <img id="09_bird39" src="assets/09/09_bird (39).png">
+            <img id="09_bird40" src="assets/09/09_bird (40).png">
+            <img id="09_bird41" src="assets/09/09_bird (41).png">
+            <img id="09_bird42" src="assets/09/09_bird (42).png">
+            <img id="09_bird43" src="assets/09/09_bird (43).png">
+            <img id="09_bird44" src="assets/09/09_bird (44).png">
+            <img id="09_bird45" src="assets/09/09_bird (45).png">
+            <img id="09_bird46" src="assets/09/09_bird (46).png">
+            <img id="09_bird47" src="assets/09/09_bird (47).png">
+            <img id="09_bird48" src="assets/09/09_bird (48).png">
+            <img id="09_bird49" src="assets/09/09_bird (49).png">
+            <img id="09_bird50" src="assets/09/09_bird (50).png">
+            <img id="09_bird51" src="assets/09/09_bird (51).png">
+            <img id="09_bird52" src="assets/09/09_bird (52).png">
+            <img id="09_bird53" src="assets/09/09_bird (53).png">
+            <img id="09_bird54" src="assets/09/09_bird (54).png">
+            <img id="09_bird55" src="assets/09/09_bird (55).png">
+            <img id="09_bird56" src="assets/09/09_bird (56).png">
+            <img id="09_bird57" src="assets/09/09_bird (57).png">
+            <img id="09_bird58" src="assets/09/09_bird (58).png">
+            <img id="09_bird59" src="assets/09/09_bird (59).png">
+            <img id="09_bird60" src="assets/09/09_bird (60).png">
+            <img id="09_bird61" src="assets/09/09_bird (61).png">
+            <img id="09_bird62" src="assets/09/09_bird (62).png">
+            <img id="09_bird63" src="assets/09/09_bird (63).png">
+            <img id="09_bird64" src="assets/09/09_bird (64).png">
+            <img id="09_bird65" src="assets/09/09_bird (65).png">
+            <img id="09_bird66" src="assets/09/09_bird (66).png">
+            <img id="09_bird67" src="assets/09/09_bird (67).png">
+            <img id="09_bird68" src="assets/09/09_bird (68).png">
+            <img id="09_bird69" src="assets/09/09_bird (69).png">
+            <img id="09_bird70" src="assets/09/09_bird (70).png">
+            <img id="09_bird71" src="assets/09/09_bird (71).png">
+            <img id="09_bird72" src="assets/09/09_bird (72).png">
+            <img id="09_bird73" src="assets/09/09_bird (73).png">
+            <img id="09_bird74" src="assets/09/09_bird (74).png">
+            <img id="09_bird75" src="assets/09/09_bird (75).png">
+            <img id="09_bird76" src="assets/09/09_bird (76).png">
+            <img id="09_bird77" src="assets/09/09_bird (77).png">
+            <img id="09_bird78" src="assets/09/09_bird (78).png">
+            <img id="09_bird79" src="assets/09/09_bird (79).png">
+            <img id="09_bird80" src="assets/09/09_bird (80).png">
+            <img id="09_bird81" src="assets/09/09_bird (81).png">
+            <img id="09_bird82" src="assets/09/09_bird (82).png">
+            <img id="09_bird83" src="assets/09/09_bird (83).png">
+            <img id="09_bird84" src="assets/09/09_bird (84).png">
+            <img id="09_bird85" src="assets/09/09_bird (85).png">
+            <img id="09_bird86" src="assets/09/09_bird (86).png">
+            <img id="09_bird87" src="assets/09/09_bird (87).png">
+            <img id="09_bird88" src="assets/09/09_bird (88).png">
+            <img id="09_bird89" src="assets/09/09_bird (89).png">
+            <img id="09_bird90" src="assets/09/09_bird (90).png">
+            <img id="09_bird91" src="assets/09/09_bird (91).png">
+            <img id="09_bird92" src="assets/09/09_bird (92).png">
+            <img id="09_bird93" src="assets/09/09_bird (93).png">
+            <img id="09_bird94" src="assets/09/09_bird (94).png">
+            <img id="09_bird95" src="assets/09/09_bird (95).png">
+            <img id="09_bird96" src="assets/09/09_bird (96).png">
+            <img id="09_bird97" src="assets/09/09_bird (97).png">
+            <img id="09_bird98" src="assets/09/09_bird (98).png">
+            <img id="09_bird99" src="assets/09/09_bird (99).png">
+            <img id="09_bird100" src="assets/09/09_bird (100).png">
+            <img id="09_bird101" src="assets/09/09_bird (101).png">
+            <img id="09_bird102" src="assets/09/09_bird (102).png">
+            <img id="09_bird103" src="assets/09/09_bird (103).png">
+            <img id="09_bird104" src="assets/09/09_bird (104).png">
+            <img id="09_bird105" src="assets/09/09_bird (105).png">
+            <img id="09_bird106" src="assets/09/09_bird (106).png">
+            <img id="09_bird107" src="assets/09/09_bird (107).png">
+            <img id="09_bird108" src="assets/09/09_bird (108).png">
+            <img id="09_bird109" src="assets/09/09_bird (109).png">
+            <img id="09_bird110" src="assets/09/09_bird (110).png">
+            <img id="09_bird111" src="assets/09/09_bird (111).png">
+            <img id="09_bird112" src="assets/09/09_bird (112).png">
+            <img id="09_bird113" src="assets/09/09_bird (113).png">
+            <img id="09_bird114" src="assets/09/09_bird (114).png">
+            <img id="09_bird115" src="assets/09/09_bird (115).png">
+            <img id="09_bird116" src="assets/09/09_bird (116).png">
+            <img id="09_bird117" src="assets/09/09_bird (117).png">
+            <img id="09_bird118" src="assets/09/09_bird (118).png">
+            <img id="09_bird119" src="assets/09/09_bird (119).png">
+            <img id="09_bird120" src="assets/09/09_bird (120).png">
+            <!-- 10-73 -->
+            <img id="10_blow1" src="assets/10/10_blow (1).png">
+            <img id="10_blow2" src="assets/10/10_blow (2).png">
+            <img id="10_blow3" src="assets/10/10_blow (3).png">
+            <img id="10_blow4" src="assets/10/10_blow (4).png">
+            <img id="10_blow5" src="assets/10/10_blow (5).png">
+            <img id="10_blow6" src="assets/10/10_blow (6).png">
+            <img id="10_blow7" src="assets/10/10_blow (7).png">
+            <img id="10_blow8" src="assets/10/10_blow (8).png">
+            <img id="10_blow9" src="assets/10/10_blow (9).png">
+            <img id="10_blow10" src="assets/10/10_blow (10).png">
+            <img id="10_blow11" src="assets/10/10_blow (11).png">
+            <img id="10_blow12" src="assets/10/10_blow (12).png">
+            <img id="10_blow13" src="assets/10/10_blow (13).png">
+            <img id="10_blow14" src="assets/10/10_blow (14).png">
+            <img id="10_blow15" src="assets/10/10_blow (15).png">
+            <img id="10_blow16" src="assets/10/10_blow (16).png">
+            <img id="10_blow17" src="assets/10/10_blow (17).png">
+            <img id="10_blow18" src="assets/10/10_blow (18).png">
+            <img id="10_blow19" src="assets/10/10_blow (19).png">
+            <img id="10_blow20" src="assets/10/10_blow (20).png">
+            <img id="10_blow21" src="assets/10/10_blow (21).png">
+            <img id="10_blow22" src="assets/10/10_blow (22).png">
+            <img id="10_blow23" src="assets/10/10_blow (23).png">
+            <img id="10_blow24" src="assets/10/10_blow (24).png">
+            <img id="10_blow25" src="assets/10/10_blow (25).png">
+            <img id="10_blow26" src="assets/10/10_blow (26).png">
+            <img id="10_blow27" src="assets/10/10_blow (27).png">
+            <img id="10_blow28" src="assets/10/10_blow (28).png">
+            <img id="10_blow29" src="assets/10/10_blow (29).png">
+            <img id="10_blow30" src="assets/10/10_blow (30).png">
+            <img id="10_blow31" src="assets/10/10_blow (31).png">
+            <img id="10_blow32" src="assets/10/10_blow (32).png">
+            <img id="10_blow33" src="assets/10/10_blow (33).png">
+            <img id="10_blow34" src="assets/10/10_blow (34).png">
+            <img id="10_blow35" src="assets/10/10_blow (35).png">
+            <img id="10_blow36" src="assets/10/10_blow (36).png">
+            <img id="10_blow37" src="assets/10/10_blow (37).png">
+            <img id="10_blow38" src="assets/10/10_blow (38).png">
+            <img id="10_blow39" src="assets/10/10_blow (39).png">
+            <img id="10_blow40" src="assets/10/10_blow (40).png">
+            <img id="10_blow41" src="assets/10/10_blow (41).png">
+            <img id="10_blow42" src="assets/10/10_blow (42).png">
+            <img id="10_blow43" src="assets/10/10_blow (43).png">
+            <img id="10_blow44" src="assets/10/10_blow (44).png">
+            <img id="10_blow45" src="assets/10/10_blow (45).png">
+            <img id="10_blow46" src="assets/10/10_blow (46).png">
+            <img id="10_blow47" src="assets/10/10_blow (47).png">
+            <img id="10_blow48" src="assets/10/10_blow (48).png">
+            <img id="10_blow49" src="assets/10/10_blow (49).png">
+            <img id="10_blow50" src="assets/10/10_blow (50).png">
+            <img id="10_blow51" src="assets/10/10_blow (51).png">
+            <img id="10_blow52" src="assets/10/10_blow (52).png">
+            <img id="10_blow53" src="assets/10/10_blow (53).png">
+            <img id="10_blow54" src="assets/10/10_blow (54).png">
+            <img id="10_blow55" src="assets/10/10_blow (55).png">
+            <img id="10_blow56" src="assets/10/10_blow (56).png">
+            <img id="10_blow57" src="assets/10/10_blow (57).png">
+            <img id="10_blow58" src="assets/10/10_blow (58).png">
+            <img id="10_blow59" src="assets/10/10_blow (59).png">
+            <img id="10_blow60" src="assets/10/10_blow (60).png">
+            <img id="10_blow61" src="assets/10/10_blow (61).png">
+            <img id="10_blow62" src="assets/10/10_blow (62).png">
+            <img id="10_blow63" src="assets/10/10_blow (63).png">
+            <img id="10_blow64" src="assets/10/10_blow (64).png">
+            <img id="10_blow65" src="assets/10/10_blow (65).png">
+            <img id="10_blow66" src="assets/10/10_blow (66).png">
+            <img id="10_blow67" src="assets/10/10_blow (67).png">
+            <img id="10_blow68" src="assets/10/10_blow (68).png">
+            <img id="10_blow69" src="assets/10/10_blow (69).png">
+            <img id="10_blow70" src="assets/10/10_blow (70).png">
+            <img id="10_blow71" src="assets/10/10_blow (71).png">
+            <img id="10_blow72" src="assets/10/10_blow (72).png">
+            <img id="10_blow73" src="assets/10/10_blow (73).png">
+            <!-- 11-120 -->
+            <img id="11_distance1" src="assets/11/11_distance (1).png">
+            <img id="11_distance2" src="assets/11/11_distance (2).png">
+            <img id="11_distance3" src="assets/11/11_distance (3).png">
+            <img id="11_distance4" src="assets/11/11_distance (4).png">
+            <img id="11_distance5" src="assets/11/11_distance (5).png">
+            <img id="11_distance6" src="assets/11/11_distance (6).png">
+            <img id="11_distance7" src="assets/11/11_distance (7).png">
+            <img id="11_distance8" src="assets/11/11_distance (8).png">
+            <img id="11_distance9" src="assets/11/11_distance (9).png">
+            <img id="11_distance10" src="assets/11/11_distance (10).png">
+            <img id="11_distance11" src="assets/11/11_distance (11).png">
+            <img id="11_distance12" src="assets/11/11_distance (12).png">
+            <img id="11_distance13" src="assets/11/11_distance (13).png">
+            <img id="11_distance14" src="assets/11/11_distance (14).png">
+            <img id="11_distance15" src="assets/11/11_distance (15).png">
+            <img id="11_distance16" src="assets/11/11_distance (16).png">
+            <img id="11_distance17" src="assets/11/11_distance (17).png">
+            <img id="11_distance18" src="assets/11/11_distance (18).png">
+            <img id="11_distance19" src="assets/11/11_distance (19).png">
+            <img id="11_distance20" src="assets/11/11_distance (20).png">
+            <img id="11_distance21" src="assets/11/11_distance (21).png">
+            <img id="11_distance22" src="assets/11/11_distance (22).png">
+            <img id="11_distance23" src="assets/11/11_distance (23).png">
+            <img id="11_distance24" src="assets/11/11_distance (24).png">
+            <img id="11_distance25" src="assets/11/11_distance (25).png">
+            <img id="11_distance26" src="assets/11/11_distance (26).png">
+            <img id="11_distance27" src="assets/11/11_distance (27).png">
+            <img id="11_distance28" src="assets/11/11_distance (28).png">
+            <img id="11_distance29" src="assets/11/11_distance (29).png">
+            <img id="11_distance30" src="assets/11/11_distance (30).png">
+            <img id="11_distance31" src="assets/11/11_distance (31).png">
+            <img id="11_distance32" src="assets/11/11_distance (32).png">
+            <img id="11_distance33" src="assets/11/11_distance (33).png">
+            <img id="11_distance34" src="assets/11/11_distance (34).png">
+            <img id="11_distance35" src="assets/11/11_distance (35).png">
+            <img id="11_distance36" src="assets/11/11_distance (36).png">
+            <img id="11_distance37" src="assets/11/11_distance (37).png">
+            <img id="11_distance38" src="assets/11/11_distance (38).png">
+            <img id="11_distance39" src="assets/11/11_distance (39).png">
+            <img id="11_distance40" src="assets/11/11_distance (40).png">
+            <img id="11_distance41" src="assets/11/11_distance (41).png">
+            <img id="11_distance42" src="assets/11/11_distance (42).png">
+            <img id="11_distance43" src="assets/11/11_distance (43).png">
+            <img id="11_distance44" src="assets/11/11_distance (44).png">
+            <img id="11_distance45" src="assets/11/11_distance (45).png">
+            <img id="11_distance46" src="assets/11/11_distance (46).png">
+            <img id="11_distance47" src="assets/11/11_distance (47).png">
+            <img id="11_distance48" src="assets/11/11_distance (48).png">
+            <img id="11_distance49" src="assets/11/11_distance (49).png">
+            <img id="11_distance50" src="assets/11/11_distance (50).png">
+            <img id="11_distance51" src="assets/11/11_distance (51).png">
+            <img id="11_distance52" src="assets/11/11_distance (52).png">
+            <img id="11_distance53" src="assets/11/11_distance (53).png">
+            <img id="11_distance54" src="assets/11/11_distance (54).png">
+            <img id="11_distance55" src="assets/11/11_distance (55).png">
+            <img id="11_distance56" src="assets/11/11_distance (56).png">
+            <img id="11_distance57" src="assets/11/11_distance (57).png">
+            <img id="11_distance58" src="assets/11/11_distance (58).png">
+            <img id="11_distance59" src="assets/11/11_distance (59).png">
+            <img id="11_distance60" src="assets/11/11_distance (60).png">
+            <img id="11_distance61" src="assets/11/11_distance (61).png">
+            <img id="11_distance62" src="assets/11/11_distance (62).png">
+            <img id="11_distance63" src="assets/11/11_distance (63).png">
+            <img id="11_distance64" src="assets/11/11_distance (64).png">
+            <img id="11_distance65" src="assets/11/11_distance (65).png">
+            <img id="11_distance66" src="assets/11/11_distance (66).png">
+            <img id="11_distance67" src="assets/11/11_distance (67).png">
+            <img id="11_distance68" src="assets/11/11_distance (68).png">
+            <img id="11_distance69" src="assets/11/11_distance (69).png">
+            <img id="11_distance70" src="assets/11/11_distance (70).png">
+            <img id="11_distance71" src="assets/11/11_distance (71).png">
+            <img id="11_distance72" src="assets/11/11_distance (72).png">
+            <img id="11_distance73" src="assets/11/11_distance (73).png">
+            <img id="11_distance74" src="assets/11/11_distance (74).png">
+            <img id="11_distance75" src="assets/11/11_distance (75).png">
+            <img id="11_distance76" src="assets/11/11_distance (76).png">
+            <img id="11_distance77" src="assets/11/11_distance (77).png">
+            <img id="11_distance78" src="assets/11/11_distance (78).png">
+            <img id="11_distance79" src="assets/11/11_distance (79).png">
+            <img id="11_distance80" src="assets/11/11_distance (80).png">
+            <img id="11_distance81" src="assets/11/11_distance (81).png">
+            <img id="11_distance82" src="assets/11/11_distance (82).png">
+            <img id="11_distance83" src="assets/11/11_distance (83).png">
+            <img id="11_distance84" src="assets/11/11_distance (84).png">
+            <img id="11_distance85" src="assets/11/11_distance (85).png">
+            <img id="11_distance86" src="assets/11/11_distance (86).png">
+            <img id="11_distance87" src="assets/11/11_distance (87).png">
+            <img id="11_distance88" src="assets/11/11_distance (88).png">
+            <img id="11_distance89" src="assets/11/11_distance (89).png">
+            <img id="11_distance90" src="assets/11/11_distance (90).png">
+            <img id="11_distance91" src="assets/11/11_distance (91).png">
+            <img id="11_distance92" src="assets/11/11_distance (92).png">
+            <img id="11_distance93" src="assets/11/11_distance (93).png">
+            <img id="11_distance94" src="assets/11/11_distance (94).png">
+            <img id="11_distance95" src="assets/11/11_distance (95).png">
+            <img id="11_distance96" src="assets/11/11_distance (96).png">
+            <img id="11_distance97" src="assets/11/11_distance (97).png">
+            <img id="11_distance98" src="assets/11/11_distance (98).png">
+            <img id="11_distance99" src="assets/11/11_distance (99).png">
+            <img id="11_distance100" src="assets/11/11_distance (100).png">
+            <img id="11_distance101" src="assets/11/11_distance (101).png">
+            <img id="11_distance102" src="assets/11/11_distance (102).png">
+            <img id="11_distance103" src="assets/11/11_distance (103).png">
+            <img id="11_distance104" src="assets/11/11_distance (104).png">
+            <img id="11_distance105" src="assets/11/11_distance (105).png">
+            <img id="11_distance106" src="assets/11/11_distance (106).png">
+            <img id="11_distance107" src="assets/11/11_distance (107).png">
+            <img id="11_distance108" src="assets/11/11_distance (108).png">
+            <img id="11_distance109" src="assets/11/11_distance (109).png">
+            <img id="11_distance110" src="assets/11/11_distance (110).png">
+            <img id="11_distance111" src="assets/11/11_distance (111).png">
+            <img id="11_distance112" src="assets/11/11_distance (112).png">
+            <img id="11_distance113" src="assets/11/11_distance (113).png">
+            <img id="11_distance114" src="assets/11/11_distance (114).png">
+            <img id="11_distance115" src="assets/11/11_distance (115).png">
+            <img id="11_distance116" src="assets/11/11_distance (116).png">
+            <img id="11_distance117" src="assets/11/11_distance (117).png">
+            <img id="11_distance118" src="assets/11/11_distance (118).png">
+            <img id="11_distance119" src="assets/11/11_distance (119).png">
+            <img id="11_distance120" src="assets/11/11_distance (120).png">
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
 
     <script>
-
-        function playvideo(vidnum) {
-            var videoEl_1 = document.querySelector('#' + vidnum);
-            videoEl_1.play();
-        }
-        function videocheck() {
-            var label = document.querySelector('input[name = "label"]:checked').value;
-            var lists = document.querySelectorAll(".mybuttons")
-            for (i = 0; i < lists.length; ++i) {
-                lists[i].style.display = "none";
-            }
-            var vids = document.querySelectorAll(".myvid")
-            for (i = 0; i < vids.length; ++i) {
-                vids[i].pause();
-                vids[i].currentTime = 0;
-            }
-            document.getElementById("mybuttons-" + label).style.display = "flex";
-        }
         var time = 1;
         window.onload = function () {
-            document.getElementById("mybuttongroup").style.display = "flex";
-            videocheck();
             setInterval(change, 50);
         };
 
         function change() {
             time++;
             changeImg("01_bubble", 120);
+            changeImg("02_ocean", 120);
+            changeImg("03_sky", 85);
+            changeImg("04_fish", 87);
+            changeImg("05_island", 120);
+            // changeImg("06_leave", 96);
+            // changeImg("07_dragon", 120);
+            // changeImg("08_scarf", 150);
+            // changeImg("09_bird", 120);
+            // changeImg("10_blow", 73);
+            // changeImg("11_distance", 120);
         }
 
         function changeImg(img, count) {
