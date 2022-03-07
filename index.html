@@ -29,11 +29,39 @@
         color: white;
         margin-top: -5em;
     }
+
+    .buttongroup {
+        position: absolute;
+        bottom: 1.5em;
+        left: 0;
+        width: 100%;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .buttons {
+        font-family: "cwTeXKai", serif;
+        border-radius: 4em;
+        border: none;
+        background-color: rgb(204, 204, 204);
+        font-weight: bolder;
+        color: #000;
+        width: 6em;
+        height: 2em;
+        font-size: 20px;
+    }
 </style>
 
 <body style="margin : 0px; overflow: hidden;">
     <div class="arjs-loader">
         <div>Loading, please wait...</div>
+    </div>
+    <div class="buttongroup">
+        <label><a class="a-btn" href="pages/02.html">06-11
+            </a></label>
     </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
@@ -88,11 +116,11 @@
             <a-image id="Img_10_blow" src="#10_blow1" position="70 -200 -105" rotation="-90 0 0" play="true" width=200
                 height=146.4></a-image>
         </a-nft>
-        <!--<a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
+        <a-nft type="nft" url="./data/11_distance" smooth="true" smoothCount="10" smoothTolerance=".01"
             smoothThreshold="5">
             <a-image id="Img_11_distance" src="#11_distance1" position="70 -200 -105" rotation="-90 0 0" play="true"
                 width=200 height=146.4></a-image>
-        </a-nft> -->
+        </a-nft>
         <a-assets>
             <!-- 01-120 -->
             <img id="01_bubble1" src="assets/01/01_bubble (1).png">
@@ -1196,7 +1224,7 @@
             <img id="10_blow72" src="assets/10/10_blow (72).png">
             <img id="10_blow73" src="assets/10/10_blow (73).png">
             <!-- 11-120 -->
-            <!-- <img id="11_distance1" src="assets/11/11_distance (1).png">
+            <img id="11_distance1" src="assets/11/11_distance (1).png">
             <img id="11_distance2" src="assets/11/11_distance (2).png">
             <img id="11_distance3" src="assets/11/11_distance (3).png">
             <img id="11_distance4" src="assets/11/11_distance (4).png">
@@ -1315,7 +1343,7 @@
             <img id="11_distance117" src="assets/11/11_distance (117).png">
             <img id="11_distance118" src="assets/11/11_distance (118).png">
             <img id="11_distance119" src="assets/11/11_distance (119).png">
-            <img id="11_distance120" src="assets/11/11_distance (120).png"> -->
+            <img id="11_distance120" src="assets/11/11_distance (120).png">
         </a-assets>
         <a-entity camera></a-entity>
     </a-scene>
